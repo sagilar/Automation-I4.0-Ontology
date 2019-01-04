@@ -1,0 +1,3238 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology"
+     versionIRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology/1.3.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="doap" IRI="http://usefulinc.com/ns/doap#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-10-31</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <IRI>https://github.com/sagilar</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+        <Literal xml:lang="en">This work is distributed under a GNU GENERAL PUBLIC LICENSE (https://fsf.org/).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>aI4.0-ontology-core</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="doap:repository"/>
+        <IRI>https://github.com/sagilar</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">The core ontology for automation systems related to the Industry 4.0 and Smart Manufacturing</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.3</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscreteDynamicsModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semantics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntacticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product/Asset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ensures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#establishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formalizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interacts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spreads"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#standardizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transmits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#understands"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#concernsTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInteroperabilityDegree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTransmitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_II"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_III"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_IV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_IX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_V"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Domain_Instance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Proprietary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Network_Automation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Proprietary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semantic_Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syntactic_Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Product/Asset_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Product/Asset_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="doap:repository"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticInteroperability"/>
+        <Class IRI="#Interoperability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareResource"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntacticInteroperability"/>
+        <Class IRI="#Interoperability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thing"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Architecture"/>
+        <Class IRI="#DiscreteDynamicsModel"/>
+        <Class IRI="#Domain"/>
+        <Class IRI="#Information"/>
+        <Class IRI="#Interoperability"/>
+        <Class IRI="#Language"/>
+        <Class IRI="#Network"/>
+        <Class IRI="#Process"/>
+        <Class IRI="#Protocol"/>
+        <Class IRI="#Representation"/>
+        <Class IRI="#Semantics"/>
+        <Class IRI="#Service"/>
+        <Class IRI="#Standard"/>
+        <Class IRI="#Product/Asset"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_II"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_III"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_V"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Architecture"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DiscreteDynamicsModel"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DiscreteDynamicsModel"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domain"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Information"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Language_Proprietary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protocol"/>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protocol"/>
+        <NamedIndividual IRI="#Protocol_Proprietary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protocol"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protocol"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Representation"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SemanticInteroperability"/>
+        <NamedIndividual IRI="#Semantic_Interoperability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Semantics"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Service"/>
+        <NamedIndividual IRI="#Service_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Standard"/>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Standard"/>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntacticInteroperability"/>
+        <NamedIndividual IRI="#Syntactic_Interoperability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Product/Asset"/>
+        <NamedIndividual IRI="#Product/Asset_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Product/Asset"/>
+        <NamedIndividual IRI="#Product/Asset_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Standard"/>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Standard"/>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Standard"/>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+        <NamedIndividual IRI="#Language_Proprietary"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Process_B"/>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+        <NamedIndividual IRI="#Protocol_Proprietary"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Semantic_Interoperability"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+        <NamedIndividual IRI="#Service_1"/>
+        <NamedIndividual IRI="#Service_2"/>
+        <NamedIndividual IRI="#Service_3"/>
+        <NamedIndividual IRI="#Service_4"/>
+        <NamedIndividual IRI="#Service_5"/>
+        <NamedIndividual IRI="#Service_6"/>
+        <NamedIndividual IRI="#Service_7"/>
+        <NamedIndividual IRI="#Service_8"/>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+        <NamedIndividual IRI="#Syntactic_Interoperability"/>
+        <NamedIndividual IRI="#Product/Asset_A"/>
+        <NamedIndividual IRI="#Product/Asset_B"/>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Service_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <NamedIndividual IRI="#Service_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <NamedIndividual IRI="#Service_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Service_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Service_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Service_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Service_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offers"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <NamedIndividual IRI="#Service_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#receives"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <NamedIndividual IRI="#Language_Proprietary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#understands"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <NamedIndividual IRI="#Protocol_Proprietary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_I"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_II"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_III"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_V"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#establishes"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spreads"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Service_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transmits"/>
+        <NamedIndividual IRI="#Network_Automation"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+        <NamedIndividual IRI="#Process_B"/>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <NamedIndividual IRI="#Process_B"/>
+        <NamedIndividual IRI="#Service_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ensures"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+        <NamedIndividual IRI="#Semantic_Interoperability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ensures"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+        <NamedIndividual IRI="#Syntactic_Interoperability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#formalizes"/>
+        <NamedIndividual IRI="#Semantics_Instance"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#standardizes"/>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#standardizes"/>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requires"/>
+        <NamedIndividual IRI="#Product/Asset_A"/>
+        <NamedIndividual IRI="#Process_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requires"/>
+        <NamedIndividual IRI="#Product/Asset_B"/>
+        <NamedIndividual IRI="#Process_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#standardizes"/>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#standardizes"/>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#standardizes"/>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <Literal>SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_I"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <Literal>Device</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <Literal>Thing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_II"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_III"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <Literal>Device</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_IV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+        <Literal>Person</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_IX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <Literal>SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_V"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_VI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_VII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <Literal>Thing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIdentifier"/>
+        <NamedIndividual IRI="#Actor_VIII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+        <Literal>Activation Request</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+        <Literal>Call Function</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+        <Literal>Data Request</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+        <Literal>Measurements Update</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+        <Literal>Message Exchange Subscription</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+        <Literal>Operation Time Request</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+        <Literal>Synchronization Request</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+        <Literal>Variable Update</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransmitter"/>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_1"/>
+        <Literal>To Do</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_2"/>
+        <Literal>To Run</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_3"/>
+        <Literal>To Stop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_4"/>
+        <Literal>To Do</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_5"/>
+        <Literal>To Connect</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_6"/>
+        <Literal>To Cut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_7"/>
+        <Literal>To Start</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_8"/>
+        <Literal>To Do</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#concernsTo"/>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+        <Literal>Device, SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#concernsTo"/>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+        <Literal>Thing, Device, SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#concernsTo"/>
+        <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
+        <Literal>Thing, Device</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#concernsTo"/>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+        <Literal>Thing, Device, SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#concernsTo"/>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+        <Literal>Thing, Device, SoftwareResource</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#defines"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ensures"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#establishes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#formalizes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#interacts"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#offers"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#receives"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requires"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#spreads"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#standardizes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transmits"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#understands"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#defines"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ensures"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#establishes"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#formalizes"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#generates"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isComposedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#offers"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#receives"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#requires"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#spreads"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#standardizes"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#transmits"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#understands"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+        <Class IRI="#Protocol"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#Representation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ensures"/>
+        <Class IRI="#Semantics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#establishes"/>
+        <Class IRI="#Domain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#formalizes"/>
+        <Class IRI="#Semantics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interacts"/>
+        <ObjectUnionOf>
+            <Class IRI="#Actor"/>
+            <Class IRI="#Device"/>
+            <Class IRI="#SoftwareResource"/>
+            <Class IRI="#Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <Class IRI="#Architecture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <Class IRI="#Architecture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <Class IRI="#Domain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offers"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#receives"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Product/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spreads"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#standardizes"/>
+        <Class IRI="#Standard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transmits"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#understands"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+        <Class IRI="#SemanticInteroperability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+        <Class IRI="#SyntacticInteroperability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defines"/>
+        <ObjectUnionOf>
+            <Class IRI="#Architecture"/>
+            <Class IRI="#Language"/>
+            <Class IRI="#Protocol"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ensures"/>
+        <Class IRI="#Interoperability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#establishes"/>
+        <Class IRI="#Semantics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#formalizes"/>
+        <ObjectUnionOf>
+            <Class IRI="#Language"/>
+            <Class IRI="#Protocol"/>
+            <Class IRI="#Representation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="#Information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+        <Class IRI="#DiscreteDynamicsModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interacts"/>
+        <ObjectUnionOf>
+            <Class IRI="#Actor"/>
+            <Class IRI="#Device"/>
+            <Class IRI="#SoftwareResource"/>
+            <Class IRI="#Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isImplementedBy"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+        <Class IRI="#Standard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offers"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#receives"/>
+        <Class IRI="#Information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spreads"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#standardizes"/>
+        <ObjectUnionOf>
+            <Class IRI="#Actor"/>
+            <Class IRI="#Representation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#transmits"/>
+        <Class IRI="#Information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#understands"/>
+        <ObjectUnionOf>
+            <Class IRI="#Language"/>
+            <Class IRI="#Protocol"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#concernsTo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasContent"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDescription"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasIdentifier"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasInteroperabilityDegree"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasReceiver"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTransmitter"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <Class IRI="#Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#concernsTo"/>
+        <Class IRI="#Standard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <Class IRI="#Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasContent"/>
+        <Class IRI="#Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIdentifier"/>
+        <ObjectUnionOf>
+            <Class IRI="#Actor"/>
+            <Class IRI="#Service"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInteroperabilityDegree"/>
+        <Class IRI="#Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasReceiver"/>
+        <Class IRI="#Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTransmitter"/>
+        <Class IRI="#Information"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#concernsTo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCharacteristic"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasContent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasIdentifier"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInteroperabilityDegree"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasReceiver"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTransmitter"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForActorInteraction</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#id1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#id2"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTransmitter"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#id1"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasReceiver"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#id2"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Information"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#interacts"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryForInteractionPairs</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#interacts"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>UniqueIdentifierActors</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <SameIndividualAtom>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </SameIndividualAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForInteroperabilityDegreeAsignmentHigh</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#stio"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#smio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForSemanticInteroperabilityCompliance</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#defines"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SemanticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sio"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Semantics"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Representation"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#formalizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sio"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForSyntacticInteroperabilityCompliance</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SyntacticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sio"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#defines"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Semantics"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Representation"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#formalizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sio"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToArchitectureLevelThing</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#belongsToArchitectureLevel"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Thing"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToArchitectureLevelDevice</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#belongsToArchitectureLevel"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToArchitectureLevelSoftwareResource</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#belongsToArchitectureLevel"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SoftwareResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToArchitectureLevelPerson</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#belongsToArchitectureLevel"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToCharacteristicDevice</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCharacteristic"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>Device</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToCharacteristicPerson</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCharacteristic"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>Person</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToCharacteristicSoftwareResource</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCharacteristic"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>SoftwareResource</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SoftwareResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AssignmentDueToCharacteristicThing</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCharacteristic"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>Thing</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Thing"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryForActorsWithHighInteroperabilityDegree</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryForActorsWithLowInteroperabilityDegree</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>Low</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryForActorsWithMediumInteroperabilityDegree</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Assignment of interoperability degree - Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <ObjectMaxCardinality cardinality="0">
+                    <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                    <Class IRI="#SemanticInteroperability"/>
+                </ObjectMaxCardinality>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <ObjectMaxCardinality cardinality="0">
+                    <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                    <Class IRI="#SyntacticInteroperability"/>
+                </ObjectMaxCardinality>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>Low</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Assignment of Interoperability Degree - Medium</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <ObjectMaxCardinality cardinality="0">
+                    <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                    <Class IRI="#SemanticInteroperability"/>
+                </ObjectMaxCardinality>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#stio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Assignment of Interoperability Degree - Medium2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#understands"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <ObjectMaxCardinality cardinality="0">
+                    <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                    <Class IRI="#SyntacticInteroperability"/>
+                </ObjectMaxCardinality>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl:var#smio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasInteroperabilityDegree"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForStandardInheritanceDevices</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isComposedBy"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#d"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#concernsTo"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#d"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#defines"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+                <Literal>Device</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#d"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryWhatStandardsStandardizeDevices</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#d"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#d"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryDevices</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryPerson</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryCheckMessageContentForTrafficTrack</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Information"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#c"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#i"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#c"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryInteroperableCompliantLanguagesAndProtocols</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SyntacticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#stio"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Language"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#stio"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SemanticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#smio"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Protocol"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#smio"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryServicesWithToDoContent</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sd"/>
+                <Literal>To Do</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDescription"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sd"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Service"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sd"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>UniqueIdentifierServices</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasIdentifier"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#z"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Service"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Service"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <SameIndividualAtom>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#y"/>
+            </SameIndividualAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForStandardInheritanceSoftwareResource</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SoftwareResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sr"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#concernsTo"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isComposedBy"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sr"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#defines"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+                <Literal>SoftwareResource</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#sr"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QuerySoftwareResource</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SoftwareResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RuleForStandardInheritanceThings</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Thing"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#concernsTo"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#cont"/>
+                <Literal>Thing</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isComposedBy"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#defines"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#r"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#a"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#t"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryThings</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Thing"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
