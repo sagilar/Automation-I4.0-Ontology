@@ -26,7 +26,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
-        <Literal xml:lang="en">This work is distributed under a GNU GENERAL PUBLIC LICENSE (https://fsf.org/).</Literal>
+        <Literal xml:lang="en">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>

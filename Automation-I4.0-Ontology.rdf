@@ -16,7 +16,7 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-02</terms:created>
         <terms:creator rdf:resource="https://github.com/sagilar"/>
         <terms:publisher rdf:resource="https://github.com/sagilar"/>
-        <terms:rights xml:lang="en">This work is distributed under a GNU GENERAL PUBLIC LICENSE (https://fsf.org/).</terms:rights>
+        <terms:rights xml:lang="en">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</terms:rights>
         <vann:preferredNamespacePrefix>Automation-I4.0-Ontology</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.semanticweb.org/Automation-I4.0-Ontology#</vann:preferredNamespaceUri>
         <doap:repository rdf:resource="https://github.com/sagilar"/>
