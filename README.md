@@ -8,7 +8,9 @@ The main ontology `Automation-I4.0-Ontology.owl or .rdf` is composed by several 
 - The Minified-Standards-Ontology `min-std-o.owl` which is a little ontology to integrate the partial main ontology (`Automation-I4.0-Min-Ontology.owl`) with the Standards Ontology (`sto-owl.owl`).
 - The Standards Ontology `sto-owl.owl` by Grangel et al (https://github.com/i40-Tools/StandardOntology) serialized in owl format.
 
-The integrated Automation-I4.0-Ontology with the STO is not yet stable to use with any reasoner. I recommend to use the Automation-I4.0-Min-Ontology by now; it is the same ontology without the Standards Ontology.
+The integrated Automation-I4.0-Ontology with the STO is not yet stable to use with any reasoner. I recommend to use the Automation-I4.0-Min-Ontology by now; it is the same ontology without the Standards Ontology.  
+
+RDF serializations are available for `Automation-I4.0-Ontology` and `Automation-I4.0-Min-Ontology`.  
 
 ## Features
 
