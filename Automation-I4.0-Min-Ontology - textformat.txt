@@ -26,7 +26,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
-        <Literal>This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
+        <Literal xml:lang="en">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
@@ -42,7 +42,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>The merged ontology containing the Automation I4.0 Core ontology, the Discrete Dynamics Model Ontology, and the Minified Standards Ontology.
+        <Literal xml:lang="en">The merged ontology containing the Automation I4.0 Core ontology, the Discrete Dynamics Model Ontology, and the Minified Standards Ontology.
 It represents a meta model for automation systems related to the Industry 4.0, Smart Manufacturing, and Industrial Internet of Things (IIoT).</Literal>
     </Annotation>
     <Annotation>
@@ -888,9 +888,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#repository"/>
-    </Declaration>
-    <Declaration>
-        <Datatype IRI="xsd:string"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Actor"/>
@@ -5374,106 +5371,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryServicesByActor</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#a"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Service"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#offers"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#s"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#a"/>
-                <Variable IRI="#s"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryActorArchitectureLevel</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#a"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#belongsToArchitectureLevel"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#lvl"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
-                <Variable IRI="#a"/>
-                <Variable IRI="#lvl"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryVerifySameActors</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#a1"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#a2"/>
-            </ClassAtom>
-            <SameIndividualAtom>
-                <Variable IRI="#a1"/>
-                <Variable IRI="#a2"/>
-            </SameIndividualAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
-                <Variable IRI="#a1"/>
-                <Variable IRI="#a2"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>RuleForActorInteraction</Literal>
         </Annotation>
         <Body>
@@ -5632,7 +5529,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Assignment of Interoperability Degree - High</Literal>
+            <Literal>RuleForInteroperabilityDegreeAsignmentHigh</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -6565,31 +6462,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryCurrentState</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#CurrentState"/>
-                <Variable IRI="#cs"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#cs"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>ConcurrentStateRule</Literal>
         </Annotation>
         <Body>
@@ -6993,31 +6865,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryFinalStates</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#FinalState"/>
-                <Variable IRI="#fs"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#fs"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>SequenceRule2</Literal>
         </Annotation>
         <Body>
@@ -7271,31 +7118,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryInitialStates</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#InitialState"/>
-                <Variable IRI="#is"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#is"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>QueryInteroperableCompliantLanguagesAndProtocols</Literal>
         </Annotation>
         <Body>
@@ -7414,86 +7236,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryParentLoops</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Loop"/>
-                <Variable IRI="#l"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isParentSetElement"/>
-                <Variable IRI="#l"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#l"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryManyToOneTransitions</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#ManyToOneTransition"/>
-                <Variable IRI="#mtot"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#mtot"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryNextState</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#NextState"/>
-                <Variable IRI="#ns"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#ns"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>ResourceDynamicsUnidirectional</Literal>
         </Annotation>
         <Body>
@@ -7574,56 +7316,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryOneToManyTransitions</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#OneToManyTransition"/>
-                <Variable IRI="#otmt"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#otmt"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryOneToOneTransitions</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#OneToOneTransition"/>
-                <Variable IRI="#otot"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#otot"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>QueryPerson</Literal>
         </Annotation>
         <Body>
@@ -7635,86 +7327,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
                 <Variable IRI="#x"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryPreviousState</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#PreviousState"/>
-                <Variable IRI="#ps"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#ps"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryResourceSharedStates</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Resource-SharedState"/>
-                <Variable IRI="#rss"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#rss"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryParentSequences</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Sequence"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isParentSetElement"/>
-                <Variable IRI="#s"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#s"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -7889,41 +7501,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
                 <Class IRI="#Subsequence"/>
                 <Variable IRI="#seq"/>
             </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryServicesWithDatabaseContent</Literal>
-        </Annotation>
-        <Body>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
-                <Variable IRI="#sd"/>
-                <Literal>database</Literal>
-            </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDescription"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sd"/>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Service"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
-                <Variable IRI="#s"/>
-                <Variable IRI="#sd"/>
-            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -8624,67 +8201,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryStandardAndEmbeddingCapability</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#c"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#s"/>
-                <Variable IRI="#c"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryStandardWithHighEmbeddingCapability</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal>High</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#s"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>NotContextStandardRule</Literal>
         </Annotation>
         <Body>
@@ -8694,7 +8210,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </ClassAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#v"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                <Literal>true</Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#isContextStandard"/>
@@ -8855,36 +8371,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
                 <Class IRI="#InitialState"/>
                 <Variable IRI="#s"/>
             </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryActiveStates</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isActive"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#s"/>
-            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -9465,31 +8951,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QuerySynchronousStates</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#SynchronousState"/>
-                <Variable IRI="#ss"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#ss"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>QueryThings</Literal>
         </Annotation>
         <Body>
@@ -9584,36 +9045,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
                 <Variable IRI="#t"/>
                 <Variable IRI="#seq"/>
             </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryEnabledTransitions</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Transition"/>
-                <Variable IRI="#t"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isEnabled"/>
-                <Variable IRI="#t"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="#t"/>
-            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -9903,5 +9334,5 @@ It represents a meta model for automation systems related to the Industry 4.0, S
 
 
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
 

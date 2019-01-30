@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology"
      versionIRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology/1.3.0">
-    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -48,13 +48,10 @@
         <Class IRI="#Actor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Device"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DiscreteDynamicsModel"/>
@@ -75,7 +72,13 @@
         <Class IRI="#Network"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product-Asset"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Protocol"/>
@@ -103,9 +106,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Thing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Product/Asset"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#compliesSemanticInteroperability"/>
@@ -402,12 +402,12 @@
         <Class IRI="#Language"/>
         <Class IRI="#Network"/>
         <Class IRI="#Process"/>
+        <Class IRI="#Product-Asset"/>
         <Class IRI="#Protocol"/>
         <Class IRI="#Representation"/>
         <Class IRI="#Semantics"/>
         <Class IRI="#Service"/>
         <Class IRI="#Standard"/>
-        <Class IRI="#Product/Asset"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Actor"/>
@@ -594,11 +594,11 @@
         <NamedIndividual IRI="#Syntactic_Interoperability"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Product/Asset"/>
+        <Class IRI="#Product-Asset"/>
         <NamedIndividual IRI="#Product/Asset_A"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Product/Asset"/>
+        <Class IRI="#Product-Asset"/>
         <NamedIndividual IRI="#Product/Asset_B"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1701,7 +1701,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#requires"/>
-        <Class IRI="#Product/Asset"/>
+        <Class IRI="#Product-Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#spreads"/>
@@ -2902,31 +2902,6 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryPerson</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Person"/>
-                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
-                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>QueryCheckMessageContentForTrafficTrack</Literal>
         </Annotation>
         <Body>
@@ -2992,6 +2967,31 @@
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
                 <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#l"/>
                 <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#p"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>QueryPerson</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/6/untitled-ontology-66#x"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>

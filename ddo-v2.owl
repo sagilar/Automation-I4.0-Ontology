@@ -117,10 +117,10 @@
         <Class IRI="#Loop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Many-to-1Transition"/>
+        <Class IRI="#ManyToManyTransition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Many-to-ManyTransition"/>
+        <Class IRI="#ManyToOneTransition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ModelElement"/>
@@ -133,6 +133,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#NextState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneToManyTransition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneToOneTransition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Output"/>
@@ -184,12 +190,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Variable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#1-to-1Transition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#1-to-ManyTransition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#actsOver"/>
@@ -689,11 +689,11 @@
         <Class IRI="#Sequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Many-to-1Transition"/>
+        <Class IRI="#ManyToManyTransition"/>
         <Class IRI="#Transition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Many-to-ManyTransition"/>
+        <Class IRI="#ManyToOneTransition"/>
         <Class IRI="#Transition"/>
     </SubClassOf>
     <SubClassOf>
@@ -715,6 +715,14 @@
     <SubClassOf>
         <Class IRI="#NextState"/>
         <Class IRI="#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneToManyTransition"/>
+        <Class IRI="#Transition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneToOneTransition"/>
+        <Class IRI="#Transition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Output"/>
@@ -783,14 +791,6 @@
     <SubClassOf>
         <Class IRI="#Variable"/>
         <Class IRI="#ModelElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#1-to-1Transition"/>
-        <Class IRI="#Transition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#1-to-ManyTransition"/>
-        <Class IRI="#Transition"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectIntersectionOf>
@@ -4521,27 +4521,49 @@
         </Annotation>
         <Body>
             <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s1"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s2"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#s2"/>
+                <Variable IRI="#s3"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s3"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
                 <Class IRI="#Transition"/>
                 <Variable IRI="#t"/>
             </ClassAtom>
             <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNextState"/>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s3"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasNextState"/>
                 <Variable IRI="#s1"/>
                 <Variable IRI="#s3"/>
             </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNextState"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#s2"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s3"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s1"/>
-            </ClassAtom>
             <ClassAtom>
                 <Class IRI="#State"/>
                 <Variable IRI="#s2"/>
@@ -4549,34 +4571,12 @@
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#isConnectedToState"/>
                 <Variable IRI="#t"/>
-                <Variable IRI="#s1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s2"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
                 <Variable IRI="#s3"/>
             </ObjectPropertyAtom>
-            <DifferentIndividualsAtom>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#s2"/>
-            </DifferentIndividualsAtom>
-            <DifferentIndividualsAtom>
-                <Variable IRI="#s2"/>
-                <Variable IRI="#s3"/>
-            </DifferentIndividualsAtom>
-            <DifferentIndividualsAtom>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#s3"/>
-            </DifferentIndividualsAtom>
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#1-to-ManyTransition"/>
+                <Class IRI="#OneToManyTransition"/>
                 <Variable IRI="#t"/>
             </ClassAtom>
         </Head>
@@ -4596,54 +4596,54 @@
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Transition"/>
-                <Variable IRI="#t"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNextState"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#s3"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNextState"/>
-                <Variable IRI="#s2"/>
-                <Variable IRI="#s3"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s3"/>
-            </ClassAtom>
-            <ClassAtom>
                 <Class IRI="#State"/>
                 <Variable IRI="#s1"/>
             </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s2"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s2"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s3"/>
-            </ObjectPropertyAtom>
             <DifferentIndividualsAtom>
                 <Variable IRI="#s1"/>
                 <Variable IRI="#s2"/>
             </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#Transition"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNextState"/>
+                <Variable IRI="#s2"/>
+                <Variable IRI="#s3"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s3"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNextState"/>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s3"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s3"/>
+            </ObjectPropertyAtom>
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#Many-to-1Transition"/>
+                <Class IRI="#ManyToOneTransition"/>
                 <Variable IRI="#t"/>
             </ClassAtom>
         </Head>
@@ -4663,9 +4663,23 @@
         </Annotation>
         <Body>
             <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s1"/>
+            </ClassAtom>
+            <ClassAtom>
                 <Class IRI="#Transition"/>
                 <Variable IRI="#t"/>
             </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedToState"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s1"/>
+            </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasNextState"/>
                 <Variable IRI="#s1"/>
@@ -4673,26 +4687,12 @@
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class IRI="#State"/>
-                <Variable IRI="#s1"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
                 <Variable IRI="#s2"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToState"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#s2"/>
-            </ObjectPropertyAtom>
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#1-to-1Transition"/>
+                <Class IRI="#OneToOneTransition"/>
                 <Variable IRI="#t"/>
             </ClassAtom>
         </Head>
@@ -4901,7 +4901,7 @@
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#Many-to-ManyTransition"/>
+                <Class IRI="#ManyToManyTransition"/>
                 <Variable IRI="urn:swrl:var#t"/>
             </ClassAtom>
         </Head>

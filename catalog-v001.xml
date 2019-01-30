@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="Automation-I4.0-Min-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="Automation-I4.0-Min-Ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="http://www.semanticweb.org/santiago/ontologies/2018/10/discrete-dynamics-ontology" uri="ddo-v2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology" uri="automation-I4.0-core-ontology-v1.3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology" uri="min-std-o.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548823487155" name="https://w3id.org/i40/sto#" uri="sto-owl.owl"/>
+    </group>
+</catalog>
