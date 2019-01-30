@@ -6731,7 +6731,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </ObjectPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -6792,7 +6792,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -7907,7 +7907,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#sd"/>
-                <Literal>database</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">database</Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDescription"/>
@@ -8010,7 +8010,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </ObjectPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -8037,7 +8037,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#SoftwareResource"/>
@@ -8126,7 +8126,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </ObjectPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Thing"/>
@@ -8157,7 +8157,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
