@@ -6,6 +6,8 @@ The Automation-I4.0-Ontology has been updated. Some fixes and new features have 
 - The Automation-I4.0-Ontology (without the STO) is complete, running, and tested in Protégé and the application.
 - The example application is already available in the folder `AutomationI40Ontology-Example`.
 - Some fixes and changes in the Discrete Dynamics Ontology (`ddo.owl`), Core Ontology (Automation-I4.0-Core-Ontology), and Minified Standards Ontology (`min-std-o.owl`) were done.
+- New files added: `Automation-I4.0-Min-Ontology - Application.owl` to run with the Application example (owl file with no instances). `Automation-I4.0-Min-Ontology - CodeGeneration.owl` to export the Java code in Protégé (this file has different domains in some properties to accept multiple classes in Java domain properties).
+- RDF-OWL-(TTL - Original STO) Serializations for consolidated ontologies.
 
 ### Initial commit 04/01/2019
 The Automation-I4.0-Ontology is intended to cover a new perspective of the automation systems by means of the use of the Semantic Web Technologies(SWT).
