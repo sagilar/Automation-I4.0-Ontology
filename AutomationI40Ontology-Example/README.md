@@ -32,7 +32,25 @@ Features:
 - python-opcua (for clients)
 
 --------------------------------------------------------------------------------------------------------
+
+### Process description and diagram of the example
+Diagram of the proposed application:  
+<img src="../images/metal%20separation%20process%20plant.png">
+  
+  
+Associated discrete dynamics model to example:  
+<img src="../images/metal%20separation%20process%20ddm.png">
+  
+  
+--------------------------------------------------------------------------------------------------------
+
+### Some results of the application
+<img src="../images/Java%20Application%20GUI.png">
+
   
   
   
+
+-------------------------------------------------------------------------------------------------------
+
 If you have any doubt, do not hesitate to contact me.
