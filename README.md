@@ -1,4 +1,12 @@
 # Automation-I4.0-Ontology
+
+### Update 13/03/2019
+The Automation-I4.0-Ontology has been updated. Some fixes and new features have been added.  
+- The Automation-I4.0-Ontology (merged with the STO) is complete, but not tested yet.
+- The Automation-I4.0-Ontology (without the STO) is complete, running, and tested in Protégé and the application.
+- The example application is already available in the folder `AutomationI40Ontology-Example`.
+- Some fixes and changes in the Discrete Dynamics Ontology (`ddo.owl`), Core Ontology (Automation-I4.0-Core-Ontology), and Minified Standards Ontology (`min-std-o.owl`) were done.
+
 ### Initial commit 04/01/2019
 The Automation-I4.0-Ontology is intended to cover a new perspective of the automation systems by means of the use of the Semantic Web Technologies(SWT).
 
@@ -45,7 +53,10 @@ I keep on doing enhancements and adding new features while doing my research pro
 
 
 ## Applications
-I am currently working on some applications to deploy the ontology in an real-operative automation system with distributed environment.  
+The Automation I4.0 Ontology was designed to work in real systems, thus, the folder `AutomationI40Ontology-Example` contains a Java project which runs the ontology over a metal separation process system (emulated) and an OPC UA server using the Eclipse Milo stack.  
+The application contains a subfolder `OPC UA Clients` which has two python files which run the OPC UA clientes using the Free OPC UA stack in 1 or 2 Raspberry(ies) PI.  
+Additional features like the process, SQWRL queries, and inference exportation are provided.  
+See folder for more detail.
 
 ## Contribution and support
 If you are interested in contribute to this project, feel free to do it.  
