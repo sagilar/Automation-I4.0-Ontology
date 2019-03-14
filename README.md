@@ -24,8 +24,7 @@ RDF serializations are available for `Automation-I4.0-Ontology` and `Automation-
 
 ### Core Ontology
 The core ontology is composed by several classes and axioms.  
-It contains many well-defined SWRL rules.  
-The ontology works fine at 95% approx (with Pellet reasoner).  
+It contains many well-defined SWRL rules.   
 
 ### DDO
 It is the more difficult and low-level ontology. Contains several aspects of discrete dynamics desing for Automatas and Petri Nets.  
@@ -33,13 +32,11 @@ Unlike to common Automata-PN models, it provides high-level and advanced concept
 As it has many features, some more useful than others, it may lack of other ones (It is a complex task to define such concepts). Feel free to contribute with them.  
 The DDO is composed by several classes and axioms.  
 It contains many well-defined SWRL rules.  
-It works fine at 85% approx (with Pellet reasoner).  
 
 ### Minified Standards Ontology
 It is a simple ontology that makes easier the integration of the STO and the Automation-I4.0-Min-Ontology.  
 It has few classes.  
 It has some well-defined SWRL rules.  
-It works fine.  
 
 ### STO
 The Standards Ontology is a work done by Irlán Grangel, Steffen Lohman, and Paul Baptista at Fraunhofer IAIS. Please see https://github.com/i40-Tools/StandardOntology , https://vocol.iais.fraunhofer.de/sto/ for more details.  
