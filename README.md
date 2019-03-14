@@ -1,4 +1,10 @@
-# Automation-I4.0-Ontology
+# Automation I4.0 Ontology
+Architecture of the Ontology:  
+<img src="images/FrameworkArchitecture.png">
+
+Composition of the semantic models - Model Framework:  
+<img src="images/Framework.png">
+
 
 ### Update 13/03/2019
 The Automation-I4.0-Ontology has been updated. Some fixes and new features have been added.  
