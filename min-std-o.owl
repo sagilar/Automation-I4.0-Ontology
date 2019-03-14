@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology"
      versionIRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology/1.0.0">
-    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -17,111 +17,111 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-10-31</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <AnnotationProperty abbreviatedIRI="doap:repository"/>
         <IRI>https://github.com/sagilar</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
-        <Literal xml:lang="en">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal>minify-sto-aI4.0-o</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">minified-sto</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="doap:repository"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ontology to represent a minified version of standards to integrate the ontology for automation systems in I4.0 and the STO by Grangel et al</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-10-31</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
         <IRI>https://github.com/sagilar</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="doap:repository"/>
         <IRI>https://github.com/i40-Tools/StandardsOntology</IRI>
     </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">The ontology to represent a minify version of standards to integrate the ontology for automation systems in I4.0 and the STO by Grangel et al</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.0</Literal>
-    </Annotation>
     <Declaration>
-        <Class IRI="#Actor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Device"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Domain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Representation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SoftwareResource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Standard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thing"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDomain"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isNormalizedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#standardizes"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#concernsTo"/>
+        <DataProperty IRI="#hasSoftwareContent"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasCharacteristic"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDBpediaResource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEmbeddingCapability"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasOfficialResource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasSoftwareContent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isContextStandard"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <DataProperty IRI="#concernsTo"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmbeddingCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOfficialResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#standardizes"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isNormalizedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDBpediaResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representation"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="doap:repository"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isContextStandard"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Device"/>
@@ -144,7 +144,7 @@
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Device"/>
@@ -154,7 +154,7 @@
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Person</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Person"/>
@@ -164,7 +164,7 @@
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SoftwareResource</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#SoftwareResource"/>
@@ -174,7 +174,7 @@
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thing</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Thing"/>
@@ -300,11 +300,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasDBpediaResource"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasDBpediaResource"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasEmbeddingCapability"/>
@@ -312,7 +311,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasOfficialResource"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasSoftwareContent"/>
@@ -329,11 +331,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicDevice</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicDevice</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -343,7 +345,7 @@
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -360,17 +362,17 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicPerson</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicPerson</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Person</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -391,17 +393,17 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicSoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicSoftwareResource</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -422,11 +424,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicThing</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicThing</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -436,7 +438,7 @@
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -453,16 +455,16 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationDevices</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#concernsTo"/>
@@ -493,11 +495,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ContextStandardRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -529,11 +531,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationSoftwareResources</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationSoftwareResources</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -543,7 +545,7 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -569,11 +571,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationThings</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationThings</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -591,7 +593,7 @@
             </ClassAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
                 <Variable IRI="#cont"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -609,11 +611,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleNone</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleNone</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -637,22 +639,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>None</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">None</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -663,11 +665,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow1</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -691,22 +693,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -717,11 +719,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow3</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -745,22 +747,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -771,11 +773,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium2</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -799,22 +801,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -825,11 +827,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow2</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -853,22 +855,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -879,11 +881,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium1</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -907,22 +909,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -933,11 +935,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium3</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -961,22 +963,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -987,11 +989,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleHigh</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleHigh</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -1015,22 +1017,22 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>High</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -1041,11 +1043,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>NotContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NotContextStandardRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -1059,7 +1061,7 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#v"/>
-                <Literal>true</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -1074,5 +1076,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

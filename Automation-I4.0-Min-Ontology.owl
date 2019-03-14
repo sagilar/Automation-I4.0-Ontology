@@ -6,825 +6,429 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/Automation-I4.0-Ontology">
-    <Prefix name="" IRI="http://www.semanticweb.org/Automation-I4.0-Ontology#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/Automation-I4.0-Ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-01-02</Literal>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#repository"/>
+        <IRI>https://github.com/sagilar</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.semanticweb.org/Automation-I4.0-Ontology#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
         <IRI>https://github.com/sagilar</IRI>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/publisher"/>
         <IRI>https://github.com/sagilar</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
-        <Literal>This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-        <Literal>Automation-I4.0-Ontology</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Automation-I4.0-Ontology</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-        <Literal>http://www.semanticweb.org/Automation-I4.0-Ontology#</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#repository"/>
-        <IRI>https://github.com/sagilar</IRI>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-01-02</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>The merged ontology containing the Automation I4.0 Core ontology, the Discrete Dynamics Model Ontology, and the Minified Standards Ontology.
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The merged ontology containing the Automation I4.0 Core ontology, the Discrete Dynamics Model Ontology, and the Minified Standards Ontology.
 It represents a meta model for automation systems related to the Industry 4.0, Smart Manufacturing, and Industrial Internet of Things (IIoT).</Literal>
     </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.0</Literal>
-    </Annotation>
     <Declaration>
-        <Class IRI="#Actor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AdvancedFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AnalogInput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AnalogOutput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AnalogVariable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Arc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Architecture"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#As-a-ServiceFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BidirectionalArc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ConcurrentState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CurrentState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DataInput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DataOutput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DataStream"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DataVariable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Device"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DigitalInput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DigitalOutput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DigitalVariable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DiscreteDynamicsModel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Domain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FinalState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Function"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#InitialState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Input"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Interoperability"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Language"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Loop"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ManyToManyTransition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ManyToOneTransition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ModelElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MultivariableStateFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MultivariableTransitionFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Network"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NextState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OneToManyTransition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OneToOneTransition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Output"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PreviousState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Process_"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Product-Asset"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Protocol"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Representation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RequestFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Resource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Resource-SharedState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SemanticInteroperability"/>
+        <NamedIndividual IRI="#Domain_Instance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Semantics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sequence"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Service"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SetElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SoftwareResource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Standard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#State"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StateFunction"/>
+        <NamedIndividual IRI="#ST_Function_Stores_ProcessB_Info"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Subloop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Subsequence"/>
+        <NamedIndividual IRI="#Analog_Temp_Control_A"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SynchronousState"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SyntacticInteroperability"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransitionFunction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UnidirectionalArc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Variable"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#actsOver"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#belongsToSequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#belongsToSubsequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#callsAService"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#contains"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#SoftwareResource"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ensures"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#establishes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#executes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#executesAServiceFunction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#finalizesLoop"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#finalizesSequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#finalizesSubsequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#formalizes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#generates"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAssociatedModel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDomain"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasModelElement"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasNextState"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPreviousState"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasResource"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSinkPoint"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSourcePoint"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasStateFunction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTransitionFunction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#initializesLoop"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#initializesSequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#initializesSubsequence"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#interacts"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isComposedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConnectedToArc"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConnectedToState"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConnectedToTransition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isContextVariableOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isExecutedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isImplementedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isNormalizedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPerformedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#offers"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#providesInformationToState"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#readsAbout"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#receives"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#receivesDataStream"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#receivesParameter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#requires"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#returnsResult"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#runsAService"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#spreads"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#standardizes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#transmits"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#understands"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#belongsToArchitectureLevel"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#concernsTo"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasContent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDBpediaResource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDataType"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDescription"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEmbeddingCapability"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasIdentifier"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasInteroperabilityDegree"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNumberOfAssignment"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNumberOfParameters"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNumberOfStates"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNumberOfTasks"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNumberOfTransitions"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasOfficialResource"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasReceiver"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasReturnDataType"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasReturnValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasSoftwareContent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTransmitter"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isActive"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isChildSetElement"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isContextStandard"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isEnabled"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isParentSetElement"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_Helper"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_I"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_II"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_III"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_IV"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_IX"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_Process_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_Process_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_Storer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_V"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_VI"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_VII"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Actor_VIII"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Remain_Material_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Remain_Material_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Temp_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Temp_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Temp_Control_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Analog_Temp_Control_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_10"/>
+        <Class IRI="#Sequence"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Arc_11"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Arc_12"/>
+        <Class IRI="#NextState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Arc_13"/>
+        <ObjectProperty IRI="#hasNextState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Arc_14"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_15"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_16"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_17"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_18"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_3"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_5"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_6"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_7"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_8"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arc_9"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Architecture_Instance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DDM_Two_Processes_With_Shared_Resource"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DataStream_Context"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Data_Creation_Percent_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Data_Creation_Percent_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Digital_Actor_Helper_Available"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Digital_Reactor_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Digital_Requires_Help_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Digital_Valve_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Domain_Instance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Entity_Reactor_Set_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Entity_Reactor_Set_B"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Activation_Request"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Call_Function"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Data_Request"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Measurements_Update"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Synchronization_Request"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Information_Variable_Update"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Language_Characters"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Language_Human-Readable"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Language_Proprietary"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Language_Structured"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Loop_Helping_ProcessA"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Loop_Helping_ProcessB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Loop_Main"/>
+        <Class IRI="#OneToOneTransition"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Network_Automation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Process_A"/>
+        <NamedIndividual IRI="#Service_Executes_ProcessB"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Process_B"/>
+        <ObjectProperty IRI="#actsOver"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Protocol_Broadcast"/>
+        <Class IRI="#Information"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Protocol_Proprietary"/>
+        <NamedIndividual IRI="#Arc_1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+        <NamedIndividual IRI="#DataStream_Context"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Protocol_Request-Response"/>
+        <ObjectProperty IRI="#finalizesSequence"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Representation_Semantic"/>
+        <ObjectProperty IRI="#providesInformationToState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Resource_State_2"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Resource_State_3"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ST_Function_Executes_ProcessA"/>
+        <ObjectProperty IRI="#hasDomain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ST_Function_Executes_ProcessB"/>
+        <NamedIndividual IRI="#Actor_IX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ST_Function_Helps_in_ProcessA"/>
+        <DataProperty IRI="#hasOfficialResource"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ST_Function_Helps_in_ProcessB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ST_Function_Stores_ProcessA_Info"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ST_Function_Stores_ProcessB_Info"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Semantic_Interoperability"/>
+        <NamedIndividual IRI="#Architecture_Instance"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Semantics_Instance"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Sequence_Main"/>
+        <Class IRI="#DataVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product-Asset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_10"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Service_1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_2"/>
+        <NamedIndividual IRI="#Information_Synchronization_Request"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_3"/>
+        <NamedIndividual IRI="#Language_Proprietary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_4"/>
+        <NamedIndividual IRI="#Process_A"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_5"/>
+        <Class IRI="#BidirectionalArc"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_6"/>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#repository"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_7"/>
+        <ObjectProperty IRI="#isNormalizedBy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_8"/>
+        <Class IRI="#OneToManyTransition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Executes_ProcessA"/>
+        <DataProperty IRI="#hasReceiver"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Executes_ProcessB"/>
+        <ObjectProperty IRI="#isConnectedToState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Helps_in_ProcessA"/>
+        <DataProperty IRI="#hasNumberOfTasks"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Helps_in_ProcessB"/>
+        <ObjectProperty IRI="#transmits"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Stores_ProcessA_Info"/>
+        <NamedIndividual IRI="#Actor_I"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Service_Stores_ProcessB_Info"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Standard_IEC61131"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Standard_IEC62890"/>
+        <NamedIndividual IRI="#Entity_Reactor_Set_B"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#State_1"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Actor_Storer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSinkPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isEnabled"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isActive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_Helps_in_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrentState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#callsAService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitionFunction"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#State_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Structured"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_12"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_II"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#establishes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_Stores_ProcessB_Info"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfAssignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_Process_A"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#readsAbout"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#State_3"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isConnectedToArc"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_15"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#concernsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#returnsResult"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Variable_Update"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="xsd:string"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesSemanticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Product/Asset_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdvancedFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syntactic_Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_Process_B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offers"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#State_4"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_Helps_in_ProcessB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Activation_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Request-Response"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Product/Asset_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Publisher-Subscriber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#As-a-ServiceFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Representation_Semantic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discrete_Dynamics_Model_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssociatedModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subsequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_18"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIdentifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#State_5"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Sequence_Main"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receivesParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#finalizesSubsequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resource_State_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_Creation_Percent_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContextVariableOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#belongsToArchitectureLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSourcePoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmbeddingCapability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_17"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#State_6"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#State_7"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#State_8"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Subsequence_ProcessA"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Subsequence_ProcessB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Syntactic_Interoperability"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TR_Function_Initiate_ProcessA"/>
@@ -833,64 +437,463 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <NamedIndividual IRI="#TR_Function_Initiate_ProcessB"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Transition_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Transition_2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Transition_3"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Transition_4"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Transition_5"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Transition_6"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Product/Asset_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Product/Asset_B"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/publisher"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#repository"/>
+        <DataProperty IRI="#hasSoftwareContent"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="xsd:string"/>
+        <ObjectProperty IRI="#hasTransitionFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resource_State_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digital_Reactor_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataOutput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_Creation_Percent_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultivariableTransitionFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnalogOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfTransitions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#State_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_Helper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST_Function_Executes_ProcessB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreviousState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formalizes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loop_Main"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Measurements_Update"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReturnDataType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loop_Helping_ProcessB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_VI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#standardizes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#State_8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executesAServiceFunction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST_Function_Executes_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultivariableStateFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transition_2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initializesLoop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnidirectionalArc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDBpediaResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataInput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loop_Helping_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subsequence_ProcessB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interacts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTransmitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Analog_Remain_Material_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initializesSequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST_Function_Helps_in_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscreteDynamicsModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Call_Function"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnalogVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RequestFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Analog_Remain_Material_B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcurrentState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST_Function_Helps_in_ProcessB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedToTransition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Data_Request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC62890"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfParameters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digital_Actor_Helper_Available"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runsAService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManyToOneTransition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Operation_Time_Request"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Human-Readable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_III"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalOutput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Output"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Broadcast"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isParentSetElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Analog_Temp_A"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initializesSubsequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protocol_Proprietary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Input"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_Stores_ProcessA_Info"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semantic_Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST_Function_Stores_ProcessA_Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Entity_Reactor_Set_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subsequence_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SynchronousState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnalogInput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntacticInteroperability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isContextStandard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SetElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReturnValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Analog_Temp_B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToSubsequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DDM_Two_Processes_With_Shared_Resource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isChildSetElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStream"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStateFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitialState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Characters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManyToManyTransition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfStates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinalState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/publisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#understands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_IV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Analog_Temp_Control_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digital_Requires_Help_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standard_IEC61131"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#finalizesLoop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource-SharedState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digital_Valve_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor_V"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_Executes_ProcessA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToSequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Service_7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receivesDataStream"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInteroperabilityDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spreads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loop"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receives"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Actor"/>
@@ -1141,7 +1144,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Device"/>
@@ -1151,7 +1154,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Person</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Person"/>
@@ -1161,7 +1164,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SoftwareResource</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#SoftwareResource"/>
@@ -1171,7 +1174,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <Class IRI="#Actor"/>
             <DataHasValue>
                 <DataProperty IRI="#hasCharacteristic"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thing</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#Thing"/>
@@ -1340,11 +1343,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <ObjectUnionOf>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>array</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">array</Literal>
                 </DataHasValue>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>string</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">string</Literal>
                 </DataHasValue>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
@@ -1356,19 +1359,19 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <ObjectUnionOf>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>double</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">double</Literal>
                 </DataHasValue>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>float</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">float</Literal>
                 </DataHasValue>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>integer</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">integer</Literal>
                 </DataHasValue>
                 <DataHasValue>
                     <DataProperty IRI="#hasDataType"/>
-                    <Literal>long</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">long</Literal>
                 </DataHasValue>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
@@ -1399,7 +1402,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <Class IRI="#Variable"/>
             <DataHasValue>
                 <DataProperty IRI="#hasDataType"/>
-                <Literal>boolean</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">boolean</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
         <Class IRI="#DigitalVariable"/>
@@ -1754,6 +1757,10 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <NamedIndividual IRI="#Resource_State_3"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Resource"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#StateFunction"/>
         <NamedIndividual IRI="#ST_Function_Executes_ProcessA"/>
     </ClassAssertion>
@@ -1992,6 +1999,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
         <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
         <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Resource_State_2"/>
+        <NamedIndividual IRI="#Resource_State_3"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
     </DifferentIndividuals>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#executes"/>
@@ -3214,6 +3226,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <NamedIndividual IRI="#DataStream_Context"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContextVariableOf"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
+        <NamedIndividual IRI="#DataStream_Context"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isExecutedBy"/>
         <NamedIndividual IRI="#ST_Function_Executes_ProcessA"/>
         <NamedIndividual IRI="#Actor_Process_A"/>
@@ -3472,6 +3489,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <ObjectProperty IRI="#hasNextState"/>
         <NamedIndividual IRI="#State_4"/>
         <NamedIndividual IRI="#State_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResource"/>
+        <NamedIndividual IRI="#State_4"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#initializesSubsequence"/>
@@ -3776,7 +3798,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_I"/>
-        <Literal>SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
@@ -3786,12 +3808,12 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_II"/>
-        <Literal>Device</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_II"/>
-        <Literal>Thing</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
@@ -3811,7 +3833,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_IV"/>
-        <Literal>Device</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
@@ -3821,12 +3843,22 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_IX"/>
-        <Literal>Person</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
         <NamedIndividual IRI="#Actor_IX"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Actor_Process_A"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">controller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Actor_Process_B"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">controller</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#belongsToArchitectureLevel"/>
@@ -3841,7 +3873,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_V"/>
-        <Literal>SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
@@ -3876,7 +3908,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacteristic"/>
         <NamedIndividual IRI="#Actor_VIII"/>
-        <Literal>Thing</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasIdentifier"/>
@@ -3886,7 +3918,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Activation_Request"/>
-        <Literal>Activation Request</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Activation Request</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3901,7 +3933,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Call_Function"/>
-        <Literal>Call Function</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Call Function</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3916,7 +3948,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Data_Request"/>
-        <Literal>Data Request</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Data Request</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3931,7 +3963,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Measurements_Update"/>
-        <Literal>Measurements Update</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Measurements Update</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3946,7 +3978,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Message_Exchange_Subscription"/>
-        <Literal>Message Exchange Subscription</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Message Exchange Subscription</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3961,7 +3993,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Operation_Time_Request"/>
-        <Literal>Operation Time Request</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Operation Time Request</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3976,7 +4008,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Synchronization_Request"/>
-        <Literal>Synchronization Request</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synchronization Request</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -3991,7 +4023,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasContent"/>
         <NamedIndividual IRI="#Information_Variable_Update"/>
-        <Literal>Variable Update</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Variable Update</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasReceiver"/>
@@ -4006,77 +4038,92 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     <DataPropertyAssertion>
         <DataProperty IRI="#hasValue"/>
         <NamedIndividual IRI="#Resource_State_2"/>
-        <Literal>true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasValue"/>
         <NamedIndividual IRI="#Resource_State_3"/>
-        <Literal>true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Resource_State_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_1"/>
-        <Literal>To Do</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Do</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_2"/>
-        <Literal>To Run</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Run</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_3"/>
-        <Literal>To Stop</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Stop</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_4"/>
-        <Literal>To Do</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Do</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_5"/>
-        <Literal>To Connect</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Connect</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_6"/>
-        <Literal>To Cut</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Cut</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_7"/>
-        <Literal>To Start</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Start</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDescription"/>
         <NamedIndividual IRI="#Service_8"/>
-        <Literal>To Do</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">To Do</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_Stores_ProcessA_Info"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">store into database</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#Service_Stores_ProcessB_Info"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">store into database</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#concernsTo"/>
         <NamedIndividual IRI="#Standard_IEC61131"/>
-        <Literal>Device, SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device, SoftwareResource</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#concernsTo"/>
         <NamedIndividual IRI="#Standard_IEC62890"/>
-        <Literal>Thing, Device, SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing, Device, SoftwareResource</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#concernsTo"/>
         <NamedIndividual IRI="#Standard_IEC61512/ISA-S88"/>
-        <Literal>Thing, Device</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing, Device</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#concernsTo"/>
         <NamedIndividual IRI="#Standard_IEC62264/ISA-S95"/>
-        <Literal>Thing, Device, SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing, Device, SoftwareResource</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#concernsTo"/>
         <NamedIndividual IRI="#Standard_OPC-UA/IEC62541"/>
-        <Literal>Thing, Device, SoftwareResource</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing, Device, SoftwareResource</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#actsOver"/>
@@ -4607,12 +4654,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#interacts"/>
-        <ObjectUnionOf>
-            <Class IRI="#Actor"/>
-            <Class IRI="#Device"/>
-            <Class IRI="#SoftwareResource"/>
-            <Class IRI="#Thing"/>
-        </ObjectUnionOf>
+        <Class IRI="#Actor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isComposedBy"/>
@@ -4620,11 +4662,10 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isConnectedToArc"/>
-        <Class IRI="#State"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isConnectedToArc"/>
-        <Class IRI="#Transition"/>
+        <ObjectUnionOf>
+            <Class IRI="#State"/>
+            <Class IRI="#Transition"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isConnectedToState"/>
@@ -4842,12 +4883,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#interacts"/>
-        <ObjectUnionOf>
-            <Class IRI="#Actor"/>
-            <Class IRI="#Device"/>
-            <Class IRI="#SoftwareResource"/>
-            <Class IRI="#Thing"/>
-        </ObjectUnionOf>
+        <Class IRI="#Actor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isComposedBy"/>
@@ -5125,10 +5161,6 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Class IRI="#ModelElement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasDescription"/>
-        <Class IRI="#Service"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasEmbeddingCapability"/>
         <Class IRI="#Standard"/>
     </DataPropertyDomain>
@@ -5157,11 +5189,10 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasNumberOfTasks"/>
-        <Class IRI="#State"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasNumberOfTasks"/>
-        <Class IRI="#Transition"/>
+        <ObjectUnionOf>
+            <Class IRI="#State"/>
+            <Class IRI="#Transition"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasNumberOfTransitions"/>
@@ -5233,11 +5264,10 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasDBpediaResource"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasDBpediaResource"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasDataType"/>
@@ -5281,7 +5311,10 @@ It represents a meta model for automation systems related to the Industry 4.0, S
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasOfficialResource"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasReceiver"/>
@@ -5292,20 +5325,12 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasReturnValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#hasSoftwareContent"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasTransmitter"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isActive"/>
@@ -5334,11 +5359,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ActorExecutesServiceFunction</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ActorExecutesServiceFunction</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -5370,11 +5395,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryServicesByActor</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryServicesByActor</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5405,11 +5430,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryActorArchitectureLevel</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryActorArchitectureLevel</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5436,11 +5461,45 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryVerifySameActors</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryActorWithControllerDesc</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Actor"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDescription"/>
+                <Variable IRI="#a"/>
+                <Variable IRI="#d"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="#d"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">controller</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#a"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryVerifySameActors</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5470,11 +5529,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForActorInteraction</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RuleForActorInteraction</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5553,11 +5612,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryForInteractionPairs</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryForInteractionPairs</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -5588,11 +5647,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>UniqueIdentifierActors</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UniqueIdentifierActors</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -5628,11 +5687,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Assignment of Interoperability Degree - High</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Assignment of Interoperability Degree - High</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -5672,7 +5731,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
                 <Variable IRI="#x"/>
-                <Literal>High</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -5683,11 +5742,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForSemanticInteroperabilityCompliance</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RuleForSemanticInteroperabilityCompliance</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5741,11 +5800,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForSyntacticInteroperabilityCompliance</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RuleForSyntacticInteroperabilityCompliance</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -5799,11 +5858,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToArchitectureLevelThing</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToArchitectureLevelThing</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
@@ -5834,11 +5893,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToArchitectureLevelDevice</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToArchitectureLevelDevice</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -5869,11 +5928,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToArchitectureLevelSoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToArchitectureLevelSoftwareResource</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
@@ -5908,52 +5967,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToArchitectureLevelPerson</Literal>
-        </Annotation>
-        <Body>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="#y"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
-            </BuiltInAtom>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#x"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#belongsToArchitectureLevel"/>
-                <Variable IRI="#x"/>
-                <Variable IRI="#y"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#Person"/>
-                <Variable IRI="#x"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicDevice</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicDevice</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Device</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -5974,17 +5998,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicPerson</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicPerson</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Person</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -6005,17 +6029,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicSoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicSoftwareResource</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>SoftwareResource</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -6036,11 +6060,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AssignmentDueToCharacteristicThing</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicThing</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6050,7 +6074,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasCharacteristic"/>
                 <Variable IRI="#x"/>
-                <Literal>Thing</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -6067,17 +6091,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryForActorsWithHighInteroperabilityDegree</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryForActorsWithHighInteroperabilityDegree</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
                 <Variable IRI="#x"/>
-                <Literal>High</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -6097,17 +6121,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryForActorsWithLowInteroperabilityDegree</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryForActorsWithLowInteroperabilityDegree</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
                 <Variable IRI="#x"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -6127,17 +6151,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryForActorsWithMediumInteroperabilityDegree</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryForActorsWithMediumInteroperabilityDegree</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
                 <Variable IRI="#x"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
@@ -6157,51 +6181,51 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Assignment of interoperability degree - Low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assignment of interoperability degree - Low</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
                 <Class IRI="#Protocol"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#p"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#l"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <ObjectMaxCardinality cardinality="0">
                     <ObjectProperty IRI="#compliesSemanticInteroperability"/>
                     <Class IRI="#SemanticInteroperability"/>
                 </ObjectMaxCardinality>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#l"/>
             </ClassAtom>
             <ClassAtom>
                 <ObjectMaxCardinality cardinality="0">
                     <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
                     <Class IRI="#SyntacticInteroperability"/>
                 </ObjectMaxCardinality>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#p"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Language"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#l"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
-                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#p"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Literal>Low</Literal>
+                <Variable IRI="urn:swrl#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -6212,49 +6236,49 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Assignment of Interoperability Degree - Medium</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assignment of Interoperability Degree - Medium</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
                 <Class IRI="#Protocol"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#p"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#l"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <ObjectMaxCardinality cardinality="0">
                     <ObjectProperty IRI="#compliesSemanticInteroperability"/>
                     <Class IRI="#SemanticInteroperability"/>
                 </ObjectMaxCardinality>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#l"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Language"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#l"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
-                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#p"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
-                <Variable IRI="urn:swrl:var#p"/>
-                <Variable IRI="urn:swrl:var#stio"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#stio"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Literal>Medium</Literal>
+                <Variable IRI="urn:swrl#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -6265,49 +6289,49 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Assignment of Interoperability Degree - Medium2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assignment of Interoperability Degree - Medium2</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
                 <Class IRI="#Protocol"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#p"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#l"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <ObjectMaxCardinality cardinality="0">
                     <ObjectProperty IRI="#compliesSyntacticInteroperability"/>
                     <Class IRI="#SyntacticInteroperability"/>
                 </ObjectMaxCardinality>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#p"/>
             </ClassAtom>
             <ClassAtom>
                 <Class IRI="#Language"/>
-                <Variable IRI="urn:swrl:var#l"/>
+                <Variable IRI="urn:swrl#l"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#compliesSemanticInteroperability"/>
-                <Variable IRI="urn:swrl:var#l"/>
-                <Variable IRI="urn:swrl:var#smio"/>
+                <Variable IRI="urn:swrl#l"/>
+                <Variable IRI="urn:swrl#smio"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Actor"/>
-                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#understands"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#p"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasInteroperabilityDegree"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Literal>Medium</Literal>
+                <Variable IRI="urn:swrl#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -6318,11 +6342,87 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>BidirectionalArcRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Next-PreviousStatePropertiesWithArcsRule</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transition"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSinkPoint"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#State"/>
+                <Variable IRI="#s2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSourcePoint"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#s1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSinkPoint"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Arc"/>
+                <Variable IRI="#a1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSourcePoint"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Arc"/>
+                <Variable IRI="#a2"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s2"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#a2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNextState"/>
+                <Variable IRI="#s1"/>
+                <Variable IRI="#s2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPreviousState"/>
+                <Variable IRI="#s2"/>
+                <Variable IRI="#s1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BidirectionalArcRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6372,11 +6472,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>UnidirectionalArcRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UnidirectionalArcRule</Literal>
         </Annotation>
         <Body>
             <DifferentIndividualsAtom>
@@ -6412,71 +6512,22 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Next-PreviousStatesWithArcsRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryConcurrentStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Transition"/>
-                <Variable IRI="urn:swrl:var#t"/>
+                <Class IRI="#ConcurrentState"/>
+                <Variable IRI="#cs"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSinkPoint"/>
-                <Variable IRI="urn:swrl:var#a1"/>
-                <Variable IRI="urn:swrl:var#t"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="urn:swrl:var#s1"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="urn:swrl:var#s2"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSourcePoint"/>
-                <Variable IRI="urn:swrl:var#a1"/>
-                <Variable IRI="urn:swrl:var#s1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSinkPoint"/>
-                <Variable IRI="urn:swrl:var#a2"/>
-                <Variable IRI="urn:swrl:var#s2"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Arc"/>
-                <Variable IRI="urn:swrl:var#a1"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSourcePoint"/>
-                <Variable IRI="urn:swrl:var#a2"/>
-                <Variable IRI="urn:swrl:var#t"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Arc"/>
-                <Variable IRI="urn:swrl:var#a2"/>
-            </ClassAtom>
-            <DifferentIndividualsAtom>
-                <Variable IRI="urn:swrl:var#s1"/>
-                <Variable IRI="urn:swrl:var#s2"/>
-            </DifferentIndividualsAtom>
-            <DifferentIndividualsAtom>
-                <Variable IRI="urn:swrl:var#a1"/>
-                <Variable IRI="urn:swrl:var#a2"/>
-            </DifferentIndividualsAtom>
         </Body>
         <Head>
-            <ClassAtom>
-                <Class IRI="#NextState"/>
-                <Variable IRI="urn:swrl:var#s2"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#PreviousState"/>
-                <Variable IRI="urn:swrl:var#s1"/>
-            </ClassAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#cs"/>
+            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -6486,86 +6537,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ResourceDynamicsBidirectional</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s1"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToArc"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#BidirectionalArc"/>
-                <Variable IRI="#a"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToArc"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="#r1"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#NextState"/>
-                <Variable IRI="#s2"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToTransition"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#t"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSinkPoint"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#t"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isEnabled"/>
-                <Variable IRI="#t"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasResource"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#r1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasResource"/>
-                <Variable IRI="#s2"/>
-                <Variable IRI="#r2"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="#r2"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryCurrentState</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryCurrentStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6586,11 +6562,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ConcurrentStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ConcurrentStateRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6624,11 +6600,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>NextStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NextStateRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -6659,11 +6635,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>PreviousStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PreviousStateRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6694,11 +6670,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForStandardInheritanceDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RuleForStandardInheritanceDevices</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -6749,11 +6725,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryWhatStandardsStandardizeDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryWhatStandardsStandardizeDevices</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6783,11 +6759,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationDevices</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
@@ -6823,11 +6799,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryDevices</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6848,11 +6824,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ContextStandardRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -6884,11 +6860,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ActorEntityRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ActorEntityRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6919,11 +6895,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>InputRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InputRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -6954,11 +6930,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>OutputRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OutputRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -6989,11 +6965,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryFinalStates</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryFinalStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7014,11 +6990,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SequenceRule2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceRule2</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7059,11 +7035,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ParentLoopRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ParentLoopRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7104,11 +7080,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StateFunctionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StateFunctionRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -7139,11 +7115,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>TransitionFunctionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TransitionFunctionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7174,11 +7150,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RequestFunctionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RequestFunctionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7205,11 +7181,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AsAServiceFunctionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AsAServiceFunctionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7236,11 +7212,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryCheckMessageContentForTrafficTrack</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryCheckMessageContentForTrafficTrack</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7267,11 +7243,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryInitialStates</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryInitialStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7292,11 +7268,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryInteroperableCompliantLanguagesAndProtocols</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryInteroperableCompliantLanguagesAndProtocols</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7340,11 +7316,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ChildLoopRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChildLoopRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7375,11 +7351,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>LoopRule3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LoopRule3</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -7410,11 +7386,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryParentLoops</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryParentLoops</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7424,7 +7400,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#isParentSetElement"/>
                 <Variable IRI="#l"/>
-                <Literal>true</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -7440,11 +7416,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryManyToOneTransitions</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryManyToOneTransitions</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7465,11 +7441,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryNextState</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryNextState</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7490,91 +7466,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ResourceDynamicsUnidirectional</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#State"/>
-                <Variable IRI="#s1"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToArc"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToArc"/>
-                <Variable IRI="#t"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="#r1"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#UnidirectionalArc"/>
-                <Variable IRI="#a"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#NextState"/>
-                <Variable IRI="#s2"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isConnectedToTransition"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#t"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasSinkPoint"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#t"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#isEnabled"/>
-                <Variable IRI="#t"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasResource"/>
-                <Variable IRI="#s1"/>
-                <Variable IRI="#r1"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasResource"/>
-                <Variable IRI="#s2"/>
-                <Variable IRI="#r2"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="#r2"/>
-                <Literal>true</Literal>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasValue"/>
-                <Variable IRI="#r1"/>
-                <Literal>false</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryOneToManyTransitions</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryOneToManyTransitions</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7595,11 +7491,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryOneToOneTransitions</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryOneToOneTransitions</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7620,11 +7516,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryPerson</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryPerson</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7645,11 +7541,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryPreviousState</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryPreviousState</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7670,11 +7566,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryResourceSharedStates</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryResourceSharedStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7695,11 +7591,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryParentSequences</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryParentSequences</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7709,7 +7605,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#isParentSetElement"/>
                 <Variable IRI="#s"/>
-                <Literal>true</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -7725,11 +7621,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SequenceRule1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceRule1</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7765,11 +7661,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>LoopRule1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LoopRule1</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7814,11 +7710,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>LoopRule2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LoopRule2</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7863,11 +7759,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SequenceRule4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceRule4</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -7898,31 +7794,30 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryServicesWithDatabaseContent</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryServicesWithDatabaseContent</Literal>
         </Annotation>
         <Body>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
-                <Variable IRI="#sd"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">database</Literal>
-            </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDescription"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sd"/>
-            </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Service"/>
                 <Variable IRI="#s"/>
             </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDescription"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#d"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="#d"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">database</Literal>
+            </BuiltInAtom>
         </Body>
         <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="#s"/>
-                <Variable IRI="#sd"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -7933,11 +7828,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>UniqueIdentifierServices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UniqueIdentifierServices</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -7973,11 +7868,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForStandardInheritanceSoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RuleForStandardInheritanceSoftwareResource</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -8028,11 +7923,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationSoftwareResources</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationSoftwareResources</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
@@ -8068,11 +7963,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QuerySoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QuerySoftwareResource</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8093,11 +7988,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>RuleForStandardInheritanceThings</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RuleForStandardInheritanceThings</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -8148,11 +8043,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StandardizationThings</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationThings</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
@@ -8188,11 +8083,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleNone</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleNone</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8207,15 +8102,15 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8231,7 +8126,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>None</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">None</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8242,11 +8137,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow1</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8261,15 +8156,15 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8285,7 +8180,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8296,11 +8191,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow3</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8315,15 +8210,15 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8339,7 +8234,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8350,11 +8245,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium2</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8369,15 +8264,15 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8393,7 +8288,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8404,11 +8299,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleLow2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow2</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8418,7 +8313,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDBpediaResource"/>
@@ -8427,11 +8322,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8447,7 +8342,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Low</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8458,11 +8353,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium1</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8472,7 +8367,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDBpediaResource"/>
@@ -8481,11 +8376,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8501,7 +8396,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8512,11 +8407,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleMedium3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium3</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8526,7 +8421,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDBpediaResource"/>
@@ -8535,11 +8430,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8555,7 +8450,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>Medium</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8566,11 +8461,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>EmbeddingCapabilityRuleHigh</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleHigh</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -8580,7 +8475,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#dbr"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDBpediaResource"/>
@@ -8589,11 +8484,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#sc"/>
-                <Literal></Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
@@ -8609,7 +8504,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>High</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -8620,11 +8515,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryStandardAndEmbeddingCapability</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryStandardAndEmbeddingCapability</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8651,11 +8546,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryStandardWithHighEmbeddingCapability</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">QueryStandardWithHighEmbeddingCapability</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8665,7 +8560,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEmbeddingCapability"/>
                 <Variable IRI="#s"/>
-                <Literal>High</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -8681,11 +8576,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>NotContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NotContextStandardRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8717,11 +8612,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>BelongsToOuterSequenceRule1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BelongsToOuterSequenceRule1</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -8754,11 +8649,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StateNotActiveByResourceRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StateNotActiveByResourceRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -8773,7 +8668,7 @@ It represents a meta model for automation systems related to the Industry 4.0, S
             <DataPropertyAtom>
                 <DataProperty IRI="#hasValue"/>
                 <Variable IRI="#r"/>
-                <Literal>false</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
             </DataPropertyAtom>
         </Body>
         <Head>
@@ -8791,17 +8686,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>StateActiveByResourceRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StateActiveByResourceRule</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasValue"/>
                 <Variable IRI="#r"/>
-                <Literal>true</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
             </DataPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasResource"/>
@@ -8828,11 +8723,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>InitialStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InitialStateRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -8864,11 +8759,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryActiveStates</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryActiveStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8894,11 +8789,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>1-to-ManyTransitionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1-to-ManyTransitionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8969,11 +8864,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Many-to-1TransitionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Many-to-1TransitionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9036,11 +8931,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>1-to-1TransitionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1-to-1TransitionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9085,11 +8980,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SynchronousStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SynchronousStateRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9137,11 +9032,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>FinalStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FinalStateRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -9173,11 +9068,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>CurrentStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CurrentStateRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9204,11 +9099,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Many-to-ManyTransitionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Many-to-ManyTransitionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9294,11 +9189,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>ResourceSharedStateRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ResourceSharedStateRule</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -9372,11 +9267,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>MultivariableStateFunctionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MultivariableStateFunctionRule</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -9407,11 +9302,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>LoopRule4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LoopRule4</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9434,11 +9329,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SequenceRule5</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceRule5</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9461,11 +9356,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QuerySynchronousStates</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QuerySynchronousStates</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9486,11 +9381,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryThings</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryThings</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9511,11 +9406,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>TransitionFunctionEnablesTransitionRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TransitionFunctionEnablesTransitionRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9556,11 +9451,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>BelongsToOuterSequenceRule2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BelongsToOuterSequenceRule2</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -9593,11 +9488,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>QueryEnabledTransitions</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QueryEnabledTransitions</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9623,11 +9518,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>MultivariableTransitionFunction</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MultivariableTransitionFunction</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9658,17 +9553,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>DataVariableRule2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DataVariableRule2</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>array</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">array</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9689,17 +9584,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>DigitalVariableRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DigitalVariableRule</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>boolean</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">boolean</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9720,17 +9615,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AnalogVariableRule4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AnalogVariableRule4</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>double</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">double</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9751,17 +9646,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AnalogVariableRule3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AnalogVariableRule3</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>float</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">float</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9782,17 +9677,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AnalogVariableRule1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AnalogVariableRule1</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>integer</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">integer</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9813,17 +9708,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AnalogVariableRule2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AnalogVariableRule2</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>long</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">long</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9844,17 +9739,17 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>DataVariableRule1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DataVariableRule1</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasDataType"/>
                 <Variable IRI="#v"/>
-                <Literal>string</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">string</Literal>
             </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Variable"/>
@@ -9875,11 +9770,11 @@ It represents a meta model for automation systems related to the Industry 4.0, S
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SequenceRule3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceRule3</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -9903,5 +9798,5 @@ It represents a meta model for automation systems related to the Industry 4.0, S
 
 
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

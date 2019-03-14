@@ -1,0 +1,994 @@
+Active State Query Inference Result:
+Active State: :State-0
+
+
+27-02-2019 16:16:21
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-0
+
+
+27-02-2019 16:16:29
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-1
+
+
+27-02-2019 16:16:37
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-0
+
+
+27-02-2019 16:16:44
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+27-02-2019 16:16:51
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+27-02-2019 16:16:59
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+27-02-2019 16:17:06
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+27-02-2019 16:17:14
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+27-02-2019 16:17:22
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+27-02-2019 16:17:31
+
+------------------------------
+
+Concurrent State Query Inference Result:
+
+
+27-02-2019 16:17:39
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Device-II
+
+
+27-02-2019 16:17:47
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-7
+Final State : :State-6
+
+
+27-02-2019 16:17:55
+
+------------------------------
+
+Actors with High Interoperability Degree Query Inference Result:
+Actor with high interoperability degree : :Device-I
+Actor with high interoperability degree : :Device-II
+Actor with high interoperability degree : :Server-I
+
+
+27-02-2019 16:18:03
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+
+
+27-02-2019 16:18:12
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+
+
+27-02-2019 16:18:20
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Device-I
+I am a Software Resource : :Server-I
+
+
+27-02-2019 16:18:27
+
+------------------------------
+
+Synchronous State Query Inference Result:
+
+
+27-02-2019 16:18:35
+
+------------------------------
+
+Standards Which Concerns to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 standardizes devices
+Standard : :Standard-IEC-61499 standardizes devices
+Standard : :Standard-IEC-62264-ISA-95 standardizes devices
+Standard : :Standard-OPC-UA standardizes devices
+
+
+27-02-2019 16:18:44
+
+------------------------------
+
+Interaction Pairs (Actors) Query Inference Result:
+Actor :Device-I interacts with Actor :Device-II
+Actor :Device-I interacts with Actor :Server-I
+Actor :Server-I interacts with Actor :Device-I
+
+
+27-02-2019 16:18:51
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-4
+
+
+27-02-2019 16:18:59
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-4
+
+
+27-02-2019 16:19:08
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-5
+
+
+27-02-2019 16:19:16
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-3
+
+
+27-02-2019 16:19:24
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+27-02-2019 16:19:34
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+27-02-2019 16:19:42
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+27-02-2019 16:19:51
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+27-02-2019 16:19:59
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+27-02-2019 16:20:08
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+27-02-2019 16:20:17
+
+------------------------------
+
+Concurrent State Query Inference Result:
+
+
+27-02-2019 16:20:26
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Device-II
+
+
+27-02-2019 16:20:35
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-7
+Final State : :State-6
+
+
+27-02-2019 16:20:44
+
+------------------------------
+
+Actors with High Interoperability Degree Query Inference Result:
+Actor with high interoperability degree : :Device-I
+Actor with high interoperability degree : :Device-II
+Actor with high interoperability degree : :Server-I
+
+
+27-02-2019 16:20:54
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+
+
+27-02-2019 16:21:02
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+
+
+27-02-2019 16:21:11
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Device-I
+I am a Software Resource : :Server-I
+
+
+27-02-2019 16:21:20
+
+------------------------------
+
+Synchronous State Query Inference Result:
+
+
+27-02-2019 16:21:29
+
+------------------------------
+
+Standards Which Concerns to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 standardizes devices
+Standard : :Standard-IEC-61499 standardizes devices
+Standard : :Standard-IEC-62264-ISA-95 standardizes devices
+Standard : :Standard-OPC-UA standardizes devices
+
+
+27-02-2019 16:21:38
+
+------------------------------
+
+Interaction Pairs (Actors) Query Inference Result:
+Actor :Device-I interacts with Actor :Device-II
+Actor :Device-I interacts with Actor :Server-I
+Actor :Server-I interacts with Actor :Device-I
+
+
+27-02-2019 16:21:48
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-4
+
+
+27-02-2019 16:21:58
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-4
+
+
+27-02-2019 16:22:06
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-5
+
+
+27-02-2019 16:22:16
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-3
+
+
+27-02-2019 16:22:26
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+27-02-2019 16:22:35
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+27-02-2019 16:22:45
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+27-02-2019 16:22:57
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+27-02-2019 16:23:05
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+27-02-2019 16:23:15
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+27-02-2019 16:23:26
+
+------------------------------
+
+Concurrent State Query Inference Result:
+
+
+27-02-2019 16:23:35
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Device-II
+
+
+27-02-2019 16:23:46
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-7
+Final State : :State-6
+
+
+27-02-2019 16:23:55
+
+------------------------------
+
+Actors with High Interoperability Degree Query Inference Result:
+Actor with high interoperability degree : :Device-I
+Actor with high interoperability degree : :Device-II
+Actor with high interoperability degree : :Server-I
+
+
+27-02-2019 16:24:06
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+
+
+27-02-2019 16:24:18
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+
+
+27-02-2019 16:24:27
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Device-I
+I am a Software Resource : :Server-I
+
+
+27-02-2019 16:24:38
+
+------------------------------
+
+Synchronous State Query Inference Result:
+
+
+27-02-2019 16:24:48
+
+------------------------------
+
+Standards Which Concerns to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 standardizes devices
+Standard : :Standard-IEC-61499 standardizes devices
+Standard : :Standard-IEC-62264-ISA-95 standardizes devices
+Standard : :Standard-OPC-UA standardizes devices
+
+
+27-02-2019 16:25:01
+
+------------------------------
+
+Interaction Pairs (Actors) Query Inference Result:
+Actor :Device-I interacts with Actor :Device-II
+Actor :Device-I interacts with Actor :Server-I
+Actor :Server-I interacts with Actor :Device-I
+
+
+27-02-2019 16:25:14
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-4
+
+
+27-02-2019 16:25:23
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-4
+
+
+27-02-2019 16:25:35
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-5
+
+
+27-02-2019 16:25:45
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-3
+
+
+27-02-2019 16:25:56
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+27-02-2019 16:26:07
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+27-02-2019 16:26:18
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+27-02-2019 16:26:31
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+27-02-2019 16:26:40
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+27-02-2019 16:26:52
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+27-02-2019 16:27:02
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-0
+
+
+03-03-2019 22:42:14
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-1
+
+
+03-03-2019 22:42:21
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-3
+Next State: :State-4
+
+
+03-03-2019 22:42:29
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-3
+Previous State: :State-4
+
+
+03-03-2019 22:42:36
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+03-03-2019 22:42:44
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+03-03-2019 22:42:51
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+03-03-2019 22:42:58
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+03-03-2019 22:43:05
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+03-03-2019 22:43:13
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+03-03-2019 22:43:20
+
+------------------------------
+
+Concurrent State Query Inference Result:
+
+
+03-03-2019 22:43:28
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Device-II
+
+
+03-03-2019 22:43:36
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-7
+Final State : :State-6
+
+
+03-03-2019 22:43:43
+
+------------------------------
+
+Actors with High Interoperability Degree Query Inference Result:
+Actor with high interoperability degree : :Device-I
+Actor with high interoperability degree : :Device-II
+Actor with high interoperability degree : :Server-I
+
+
+03-03-2019 22:43:52
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+
+
+03-03-2019 22:44:00
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+
+
+03-03-2019 22:44:07
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Device-I
+I am a Software Resource : :Server-I
+
+
+03-03-2019 22:44:16
+
+------------------------------
+
+Synchronous State Query Inference Result:
+
+
+03-03-2019 22:44:24
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 standardizes devices
+Standard : :Standard-IEC-61499 standardizes devices
+Standard : :Standard-IEC-62264-ISA-95 standardizes devices
+Standard : :Standard-OPC-UA standardizes devices
+
+
+03-03-2019 22:44:33
+
+------------------------------
+
+Interaction Pairs (Actors) Query Inference Result:
+Actor :Device-I interacts with Actor :Device-II
+Actor :Device-I interacts with Actor :Server-I
+Actor :Server-I interacts with Actor :Device-I
+
+
+03-03-2019 22:44:43
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-6
+Active State: :State-7
+
+
+03-03-2019 22:44:52
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-6
+Current State: :State-7
+
+
+03-03-2019 22:45:00
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-0
+
+
+03-03-2019 22:45:10
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-5
+
+
+03-03-2019 22:45:19
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Device-I
+
+
+03-03-2019 22:45:28
+
+------------------------------
+
+Services by Actor Query Inference Result:
+I am: :Server-I and I offer: :Save-Data-Service
+I am: :Device-I and I offer: :Send-Piece-Data-Service
+I am: :Device-II and I offer: :Perform-Separation-Service
+
+
+03-03-2019 22:45:37
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+
+
+03-03-2019 22:45:46
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+
+
+03-03-2019 22:45:56
+
+------------------------------
+
+Actor Architecture Level Query Inference Result:
+Actor :Device-I located in : "1"^^xsd:integer architecture level
+Actor :Device-I located in : "3"^^xsd:integer architecture level
+Actor :Device-II located in : "2"^^xsd:integer architecture level
+Actor :Server-I located in : "4"^^xsd:integer architecture level
+
+
+03-03-2019 22:46:04
+
+------------------------------
+
+Actor with 'controller' Description Query Inference Result:
+Actor :Device-II contains 'controller' in description
+
+
+03-03-2019 22:46:13
+
+------------------------------
+
+Concurrent State Query Inference Result:
+
+
+03-03-2019 22:46:23
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Device-II
+
+
+03-03-2019 22:46:31
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-7
+Final State : :State-6
+
+
+03-03-2019 22:46:40
+
+------------------------------
+
+Actors with High Interoperability Degree Query Inference Result:
+Actor with high interoperability degree : :Device-I
+Actor with high interoperability degree : :Device-II
+Actor with high interoperability degree : :Server-I
+
+
+03-03-2019 22:46:49
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+
+
+03-03-2019 22:46:57
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+
+
+03-03-2019 22:47:06
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Device-I
+I am a Software Resource : :Server-I
+
+
+03-03-2019 22:47:14
+
+------------------------------
+
+Synchronous State Query Inference Result:
+
+
+03-03-2019 22:47:23
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 standardizes devices
+Standard : :Standard-IEC-61499 standardizes devices
+Standard : :Standard-IEC-62264-ISA-95 standardizes devices
+Standard : :Standard-OPC-UA standardizes devices
+
+
+03-03-2019 22:47:32
+
+------------------------------
+
+Interaction Pairs (Actors) Query Inference Result:
+Actor :Device-I interacts with Actor :Device-II
+Actor :Device-I interacts with Actor :Server-I
+Actor :Server-I interacts with Actor :Device-I
+
+
+03-03-2019 22:47:42
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-6
+Active State: :State-7
+
+
+03-03-2019 22:47:51
+
+------------------------------
+
