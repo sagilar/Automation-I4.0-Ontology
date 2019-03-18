@@ -5,6 +5,10 @@ This is the example application to check the suitability of the Automation I4.0 
 The main application runs in Java. It contains the generated Java code from Protégé of the Automation I4.0 Min Ontology. The modeled system consists in a metal separation process which has 3 actors in the distributed network; one is the server (which runs directly in the Java application) and the other 2 are intended to be Raspberries PI (2 Raspberries or 1 Raspberry executing 2 processes). The model has also many middle-level and high-level concepts such as standards, the architecture, the domain, etc.  
   
   
+#### The definition of classes and asserted properties is showed in detail in the folder `instances`.
+Word table (`Instances for application - Word table.docx`) or excel table (`Instances for application.xlsx`) with all the asserted definitions.
+  
+  
 Features:
 - Process execution with graphical support (GUI). See main package `automationi40ontology.example` the Frames and Thread `threadMetalProcess`.
 - OPC UA server and dynamic data updating using the Eclipse Milo OPC UA stack: extended from Eclipse Milo server example. See package opcua and main Frame in Thread `opcserverThread`.
