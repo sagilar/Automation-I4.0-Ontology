@@ -6,6 +6,9 @@ Composition of the semantic models - Model Framework:
 <img src="images/Framework.png">
 
 
+### Update 20/05/2019
+The description and code of the SWRL rules and OWL Expressions are available in the document `SWRL Rules and OWL Expressions - Automation I4.0 Ontology.docx` discriminated by ontology.
+
 ### Update 13/03/2019
 The Automation-I4.0-Ontology has been updated. Some fixes and new features have been added.  
 - The Automation-I4.0-Ontology (merged with the STO) is complete, but not tested yet.
