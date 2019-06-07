@@ -2,7 +2,7 @@
 Architecture of the Ontology:  
 <img src="images/FrameworkArchitecture.png">
 
-Composition of the semantic models - Model Framework:  
+Composition of the semantic model and all the proposal - The Model Framework:  
 <img src="images/Framework.png">
 
 
