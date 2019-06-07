@@ -12,7 +12,7 @@ Word table (`Instances for application - Word table.docx`) or excel table (`Inst
 Features:
 - Process execution with graphical support (GUI). See main package `automationi40ontology.example` the Frames and Thread `threadMetalProcess`.
 - OPC UA server and dynamic data updating using the Eclipse Milo OPC UA stack: extended from Eclipse Milo server example. See package opcua and main Frame in Thread `opcserverThread`.
-- Dynamic infereces performing through SQWRL rules. See main frame and log frame and Thread `inferenceThread`.
+- Dynamic infereces performing through SQWRL rules. See main frame and log frame and Thread `inferenceThread`. Please refer to the file `inferences.txt` to see the generated file with the performed inferences along the tests.
 -----------------------------------------------------------------------------------------------------
 
 
