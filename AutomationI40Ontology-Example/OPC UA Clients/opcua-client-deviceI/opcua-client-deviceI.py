@@ -5,42 +5,73 @@ sys.path.insert(0, "..")
 import logging
 import time
 import random
+import _thread
+from ADCLibrary import read_analog_adc as adc
 
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setwarnings(False)
 
-pins = [2,3,4]
+#pins = [2,3,4]
+pins = [13,19,26]
 
 weight_base = 6.0
+weight = 0.0
 
 metal_detector = False
 piece_data = ''
 serial_data = ''
 
 def IO_event(channel):
-    print("event in channel " + str(channel))
+    #print("event in channel " + str(channel))
     global metal_detector,piece_data,weight_base,serial_data
-    if(channel == 2):
+    ### For random setting of weight
+    if(channel == 13):
         if GPIO.input(channel):
             weight = weight_base + (random.random() * 2.0)
             serial_data = nodeServerI_serialData.get_value()
             piece_data = '{{metallic:{0:s},weight:{1:.2f},serial:{2:}}}'.format(str(metal_detector).lower(),weight,serial_data)
-            #time.sleep(1)            
+        else:
+            pass
+    if(channel == 19):
+        ### Implemented with AnalogIn (read_analog function)
+        if GPIO.input(channel):
+            #metal_detector = True
+            pass
+        else:
+            #metal_detector = False
+            pass
+
+    if(channel == 26):
+        if GPIO.input(channel):
             nodeDeviceI_readOk.set_value(True)
         else:
-            #time.sleep(1)
             nodeDeviceI_readOk.set_value(False)
-    if(channel == 3):
-        if GPIO.input(channel):
-            metal_detector=True
+            
+def read_analog(delay):
+    global metal_detector,piece_data,weight_base,serial_data
+    weight = 0.0
+    m_detector_analog = 0.0
+    while True:
+        weight, m_detector_analog = adc.do_measurement()
+        #print("weight: "+ str(weight))
+        #print("light: " + str(m_detector_analog))
+        #weight = 1.0 * (10.0 / 3.3)
+        serial_data = nodeServerI_serialData.get_value()
+        
+        #m_detector_analog = 1.0 #(light sensor Analog HAT)
+        if m_detector_analog > 2.3 :
+            metal_detector = True
         else:
-            metal_detector=False
-    if(channel == 4):
-        if GPIO.input(channel):
-            nodeDeviceI_readOk.set_value(True)
-        else:
-            nodeDeviceI_readOk.set_value(False)
+            metal_detector = False
+            
+        piece_data = '{{metallic:{0:s},weight:{1:.2f},serial:{2:}}}'.format(str(metal_detector).lower(),weight,serial_data)
+        #print(piece_data)
+        #print(GPIO.input(26))
+        nodeDeviceI_pieceMaterialData.set_value(piece_data)
+        time.sleep(delay)
+    
+
 
 try:
     from IPython import embed
@@ -81,7 +112,7 @@ if __name__ == "__main__":
 
     #Set according to the OPC UA network
     #client = Client("opc.tcp://127.0.0.1:12686/AI4.0-Ontology-Example")
-    client = Client("opc.tcp://192.168.1.7:12686/AI4.0-Ontology-Example")
+    client = Client("opc.tcp://192.168.1.11:12686/AI4.0-Ontology-Example")
     try:
         client.connect()
         client.load_type_definitions()  # load definition of server specific structures/extension objects
@@ -165,19 +196,28 @@ if __name__ == "__main__":
         handle = sub.subscribe_data_change(nodeServerI_saveOk)
         handle = sub.subscribe_data_change(nodeServerI_serialData)
 
-        time.sleep(0.1)
-
-        # we can also subscribe to events from server
-        sub.subscribe_events()
-        # sub.unsubscribe(handle)
-        # sub.delete()
-
+        #time.sleep(0.1)
         
         ### Input callbacks
         for pin in pins:
             GPIO.setup(pin, GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
             GPIO.add_event_detect(pin, GPIO.BOTH, callback=IO_event)
 
+        # we can also subscribe to events from server
+        sub.subscribe_events()
+        # sub.unsubscribe(handle)
+        # sub.delete()
+
+        ## running IO functions            
+        try:
+           _thread.start_new_thread(read_analog, (2.0,))
+        except:
+           print("Error: unable to start thread")
+                    
+        
+        
+
         embed()
     finally:
         client.disconnect()
+pyt
