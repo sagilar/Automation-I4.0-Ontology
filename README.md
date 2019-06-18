@@ -2,7 +2,7 @@
 Architecture of the Ontology:  
 <img src="images/FrameworkArchitecture.png">
 
-Composition of the semantic models - Model Framework:  
+Composition of the semantic model and all the proposal - The Model Framework:  
 <img src="images/Framework.png">
 
 
@@ -55,7 +55,7 @@ I make a special acknowledge for such work and their support with the STO code.
 
 
 ## Research
-This project is being carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards.".  
+This project is being carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
 I keep on doing enhancements and adding new features while doing my research project.  
 - No publications have been published yet.
 
