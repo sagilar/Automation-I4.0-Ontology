@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology"
+     xml:base="http://www.semanticweb.org/santiago/minified-standard-ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology"
-     versionIRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology/1.0.0">
-    <Prefix name="" IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology"/>
+     ontologyIRI="http://www.semanticweb.org/santiago/minified-standard-ontology"
+     versionIRI="http://www.semanticweb.org/santiago/minified-standard-ontology/2.0.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/santiago/minified-standard-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -19,6 +19,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="doap:repository"/>
         <IRI>https://github.com/sagilar</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
@@ -37,10 +41,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-10-31</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
         <IRI>https://github.com/sagilar</IRI>
     </Annotation>
@@ -49,16 +49,28 @@
         <IRI>https://github.com/i40-Tools/StandardsOntology</IRI>
     </Annotation>
     <Declaration>
-        <DataProperty IRI="#hasSoftwareContent"/>
+        <ObjectProperty IRI="#standardizes"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasCharacteristic"/>
+        <DataProperty IRI="#concernsTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDomain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmbeddingCapability"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#concernsTo"/>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
@@ -67,83 +79,88 @@
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasEmbeddingCapability"/>
+        <DataProperty IRI="#hasOfficialResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Device"/>
+        <DataProperty IRI="#isContextStandard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SoftwareResource"/>
+        <ObjectProperty IRI="#isStandardizedBy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="#hasFeature"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:created"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Thing"/>
+        <DataProperty IRI="#hasDBpediaResource"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Standard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Actor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasOfficialResource"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDomain"/>
+        <ObjectProperty IRI="#belongsToSubdomain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Domain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#standardizes"/>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSoftwareContent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isNormalizedBy"/>
+        <Class IRI="#Device"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDBpediaResource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Representation"/>
+        <Class IRI="#SoftwareResource"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="doap:repository"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isContextStandard"/>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Device"/>
+        <Class IRI="#Agent"/>
         <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Agent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Person"/>
         <Class IRI="#Actor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SoftwareResource"/>
-        <Class IRI="#Actor"/>
+        <Class IRI="#Agent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Thing"/>
-        <Class IRI="#Actor"/>
+        <Class IRI="#Agent"/>
     </SubClassOf>
     <SubClassOf>
         <ObjectIntersectionOf>
             <Class IRI="#Actor"/>
             <DataHasValue>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
@@ -153,7 +170,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#Actor"/>
             <DataHasValue>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
@@ -163,7 +180,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#Actor"/>
             <DataHasValue>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SoftwareResource</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
@@ -173,7 +190,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#Actor"/>
             <DataHasValue>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thing</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
@@ -182,15 +199,19 @@
     <DisjointClasses>
         <Class IRI="#Actor"/>
         <Class IRI="#Domain"/>
-        <Class IRI="#Representation"/>
+        <Class IRI="#Process"/>
         <Class IRI="#Standard"/>
     </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToSubdomain"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasDomain"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isNormalizedBy"/>
+        <ObjectProperty IRI="#isStandardizedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -199,14 +220,27 @@
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasDomain"/>
-        <ObjectProperty IRI="#isNormalizedBy"/>
+        <ObjectProperty IRI="#isStandardizedBy"/>
     </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDomain"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isStandardizedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#standardizes"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToSubdomain"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDomain"/>
         <Class IRI="#Standard"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isNormalizedBy"/>
+        <ObjectProperty IRI="#isStandardizedBy"/>
         <Class IRI="#Domain"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -218,30 +252,34 @@
         <Class IRI="#Domain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isNormalizedBy"/>
+        <ObjectProperty IRI="#isStandardizedBy"/>
         <Class IRI="#Standard"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#standardizes"/>
         <ObjectUnionOf>
-            <Class IRI="#Actor"/>
-            <Class IRI="#Representation"/>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Process"/>
         </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Domain"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#concernsTo"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasCharacteristic"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#hasDBpediaResource"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasEmbeddingCapability"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasFeature"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -267,16 +305,16 @@
         <Class IRI="#Standard"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasCharacteristic"/>
-        <Class IRI="#Actor"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasDBpediaResource"/>
         <Class IRI="#Standard"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasEmbeddingCapability"/>
         <Class IRI="#Standard"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFeature"/>
+        <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasOfficialResource"/>
@@ -292,10 +330,6 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#concernsTo"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasCharacteristic"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -307,6 +341,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasEmbeddingCapability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFeature"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -331,22 +369,22 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicDevice</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToCharacteristicDevice</Literal>
         </Annotation>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Actor"/>
-                <Variable IRI="#x"/>
-            </ClassAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Variable IRI="#x"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Device</Literal>
             </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Agent"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ClassAtom>
@@ -362,26 +400,26 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicPerson</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToCharacteristicRobot</Literal>
         </Annotation>
         <Body>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasCharacteristic"/>
-                <Variable IRI="#x"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person</Literal>
-            </DataPropertyAtom>
             <ClassAtom>
-                <Class IRI="#Actor"/>
+                <Class IRI="#Agent"/>
                 <Variable IRI="#x"/>
             </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasFeature"/>
+                <Variable IRI="#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Robot</Literal>
+            </DataPropertyAtom>
         </Body>
         <Head>
             <ClassAtom>
-                <Class IRI="#Person"/>
+                <Class IRI="#Robot"/>
                 <Variable IRI="#x"/>
             </ClassAtom>
         </Head>
@@ -393,20 +431,20 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicSoftwareResource</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToCharacteristicSoftwareResource</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Variable IRI="#x"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </DataPropertyAtom>
             <ClassAtom>
-                <Class IRI="#Actor"/>
+                <Class IRI="#Agent"/>
                 <Variable IRI="#x"/>
             </ClassAtom>
         </Body>
@@ -424,19 +462,19 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AssignmentDueToCharacteristicThing</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AssignmentDueToCharacteristicThing</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Actor"/>
+                <Class IRI="#Agent"/>
                 <Variable IRI="#x"/>
             </ClassAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasCharacteristic"/>
+                <DataProperty IRI="#hasFeature"/>
                 <Variable IRI="#x"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </DataPropertyAtom>
@@ -455,11 +493,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationDevices</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StandardizationDevices</Literal>
         </Annotation>
         <Body>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
@@ -495,11 +533,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ContextStandardRule</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -507,14 +545,23 @@
                 <Variable IRI="#d"/>
             </ClassAtom>
             <ClassAtom>
+                <Class IRI="#Process"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsToSubdomain"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#d"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isStandardizedBy"/>
+                <Variable IRI="#d"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
                 <Class IRI="#Standard"/>
                 <Variable IRI="#s"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isNormalizedBy"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#d"/>
-            </ObjectPropertyAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
@@ -531,76 +578,76 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationSoftwareResources</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StandardizationRobots</Literal>
         </Annotation>
         <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="#cont"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Robot</Literal>
+            </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#concernsTo"/>
                 <Variable IRI="#s"/>
                 <Variable IRI="#cont"/>
             </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
-                <Variable IRI="#cont"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
-            </BuiltInAtom>
             <ClassAtom>
                 <Class IRI="#Standard"/>
                 <Variable IRI="#s"/>
             </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Robot"/>
+                <Variable IRI="#r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#r"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StandardizationSoftwareResources</Literal>
+        </Annotation>
+        <Body>
             <ClassAtom>
                 <Class IRI="#SoftwareResource"/>
-                <Variable IRI="#sr"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#standardizes"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sr"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">StandardizationThings</Literal>
-        </Annotation>
-        <Body>
-            <DataPropertyAtom>
-                <DataProperty IRI="#concernsTo"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#cont"/>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Thing"/>
-                <Variable IRI="#t"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sr"/>
             </ClassAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
-                <Variable IRI="#cont"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#cont"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SoftwareResource</Literal>
             </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#concernsTo"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#cont"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#standardizes"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#t"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sr"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -611,71 +658,21 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleNone</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleHigh</Literal>
         </Annotation>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
                 <Variable IRI="#ores"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">None</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow1</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasSoftwareContent"/>
                 <Variable IRI="#s"/>
@@ -695,338 +692,10 @@
                 <Variable IRI="#sc"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
             </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow3</Literal>
-        </Annotation>
-        <Body>
             <ClassAtom>
                 <Class IRI="#Standard"/>
                 <Variable IRI="#s"/>
             </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium2</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleLow2</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium1</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleMedium3</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasEmbeddingCapability"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
-            </DataPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EmbeddingCapabilityRuleHigh</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasSoftwareContent"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#sc"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDBpediaResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#dbr"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOfficialResource"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#ores"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#sc"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#dbr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#ores"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
-            </BuiltInAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
@@ -1043,32 +712,414 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NotContextStandardRule</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StandardizationThings</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Standard"/>
-                <Variable IRI="#s"/>
+                <Class IRI="#Thing"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#t"/>
             </ClassAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#isContextStandard"/>
-                <Variable IRI="#s"/>
-                <Variable IRI="#v"/>
+                <DataProperty IRI="#concernsTo"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#cont"/>
             </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
-                <Variable IRI="#v"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#cont"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Thing</Literal>
             </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#standardizes"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#t"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleNone</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
         </Body>
         <Head>
             <DataPropertyAtom>
-                <DataProperty IRI="#isContextStandard"/>
-                <Variable IRI="#s"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">None</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleLow1</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleLow3</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleMedium2</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleLow2</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleMedium1</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmbeddingCapabilityRuleMedium3</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSoftwareContent"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#sc"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDBpediaResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#dbr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOfficialResource"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#ores"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Standard"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEmbeddingCapability"/>
+                <Variable IRI="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
             </DataPropertyAtom>
         </Head>
     </DLSafeRule>
