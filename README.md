@@ -6,6 +6,11 @@ Composition of the semantic model and all the proposal - The Model Framework:
 <img src="images/Framework.png">
 
 
+### Update 22/02/2021
+- Inclusion of RAMI Ontology (https://github.com/i40-Tools/RAMIOntology).
+- Change of classes and relations. Extended concepts.
+- Change of application code.
+
 ### Update 20/05/2019
 The description and code of the SWRL rules and OWL Expressions are available in the document `SWRL Rules and OWL Expressions - Automation I4.0 Ontology.docx` discriminated by ontology.
 
