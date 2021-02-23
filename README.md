@@ -60,8 +60,9 @@ I make a special acknowledge for such work and their support with the STO code.
 
 
 ## Research
-This project is being carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
-I keep on doing enhancements and adding new features while doing my research project.  
+This project was carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
+I keep on doing enhancements and adding new features.  
+Please cite:  
 - "Semantic Automation Systems, a Suitable Approach for Automation Networks in the Industry 4.0", https://ieeexplore.ieee.org/document/8921156.
 
 
