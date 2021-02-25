@@ -1,0 +1,2551 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology",
+    "version" : "2.0",
+    "comments" : {
+      "en" : "The ontology to represent discrete dynamics in automation systems related to the Industry 4.0 and Smart Manufacturing"
+    },
+    "other" : {
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2018-10-31",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ddo",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "minified-sto",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "Automation-I4.0-Core-Ontology",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "This work is distributed under an Apache License 2.0 (http://www.apache.org/licenses/).",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/sagilar",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2.0",
+        "type" : "label"
+      } ],
+      "repository" : [ {
+        "identifier" : "repository",
+        "language" : "undefined",
+        "value" : "https://github.com/sagilar",
+        "type" : "iri"
+      }, {
+        "identifier" : "repository",
+        "language" : "undefined",
+        "value" : "https://github.com/i40-Tools/StandardsOntology",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#TransitionFunction",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransitionFunction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#ExecutionScope",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExecutionScope"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DigitalInput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalInput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17", "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#RequestFunction",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RequestFunction"
+    },
+    "intersection" : [ "1" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "32",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DigitalOutput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalOutput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "17", "69" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#ConcurrentState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConcurrentState"
+    },
+    "intersection" : [ "71" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "70",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Resource-SharedState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource-SharedState"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Domain",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#CurrentState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CurrentState"
+    },
+    "intersection" : [ "4" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "71",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Thing",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thing"
+    },
+    "intersection" : [ "21" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "76",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Actor",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor"
+    },
+    "subClasses" : [ "8", "77" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Standard",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Standard"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#State",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "94", "23", "71", "70", "95", "96", "97", "75" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#NextState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NextState"
+    },
+    "intersection" : [ "4" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "94",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Output",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "subClasses" : [ "98", "68", "99" ],
+    "intersection" : [ "78" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "69",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#OneToOneTransition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OneToOneTransition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#AdministrationShell",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdministrationShell"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Network",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Network"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DataInput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataInput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "72", "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Process",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "attributes" : [ "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DigitalVariable",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalVariable"
+    },
+    "subClasses" : [ "16", "68" ],
+    "intersection" : [ "78" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "17",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#ManyToManyTransition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManyToManyTransition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Robot",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Robot"
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#AnalogVariable",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalogVariable"
+    },
+    "subClasses" : [ "120", "99" ],
+    "intersection" : [ "78" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "119",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#PreviousState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreviousState"
+    },
+    "intersection" : [ "4" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "97",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#AnalogInput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalogInput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120",
+    "superClasses" : [ "18", "119" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Loop",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Loop"
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "107" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DynamicsModel",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DynamicsModel"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#SoftwareResource",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareResource"
+    },
+    "intersection" : [ "21" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "130",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#ModelElement",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModelElement"
+    },
+    "subClasses" : [ "4", "3", "10", "107", "78", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#DataOutput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataOutput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "72", "69" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "67", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#SetElement",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SetElement"
+    },
+    "subClasses" : [ "24", "123" ],
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Person",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "intersection" : [ "21" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "77",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Agent",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "130", "147", "76", "114" ],
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Asset",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#InitialState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "intersection" : [ "4" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "23",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Architecture",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Architecture"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Transition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "subClasses" : [ "160", "161", "111", "103" ],
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "87",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#StateFunction",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateFunction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#SynchronousState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SynchronousState"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Function",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Function"
+    },
+    "subClasses" : [ "67", "0", "105", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Device",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device"
+    },
+    "intersection" : [ "21" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "147",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Sequence",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sequence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "107" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "89"
+  }, {
+    "instances" : 0,
+    "union" : [ "110", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "126"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Service",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#ManyToOneTransition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManyToOneTransition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "161",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Object",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#FinalState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FinalState"
+    },
+    "intersection" : [ "4" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "96",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Data",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data"
+    },
+    "subClasses" : [ "98", "109" ],
+    "intersection" : [ "78" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "72",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Input",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "subClasses" : [ "120", "16", "109" ],
+    "intersection" : [ "78" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "18",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#AnalogOutput",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalogOutput"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99",
+    "superClasses" : [ "69", "119" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#OneToManyTransition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OneToManyTransition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "160",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#Variable",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "subClasses" : [ "72", "17", "69", "18", "119" ],
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isConnectedToState",
+    "inverse" : "5",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isConnectedToState"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "3",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#supportsProtocol",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "supportsProtocol"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasSoftwareContent",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasSoftwareContent"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasPreviousState",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPreviousState"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isComposedOf",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isComposedOf"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "20",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#initializesSequence",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "initializesSequence"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "23",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasIdentifier",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasIdentifier"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isConnectedToTransition",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isConnectedToTransition"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasReturnValue",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasReturnValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasConstraint",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasConstraint"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "33",
+    "subproperty" : [ "2", "15", "35", "36", "19", "22", "37", "38", "5", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#offers",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "offers"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#receivesExecutionScope",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "receivesExecutionScope"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#receives",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "receives"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "21",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasFeature",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasFeature"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasTransitionFunction",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasTransitionFunction"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "3",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#interactsWith",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "interactsWith"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "21",
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#contains",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "10",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasContent",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasContent"
+    },
+    "domain" : "72",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isContextStandard",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "isContextStandard"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasNumberOfParameters",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasNumberOfParameters"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#spreads",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "spreads"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "85",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#executes",
+    "inverse" : "40",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "executes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#belongsToSequence",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "belongsToSequence"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "89",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasDataType",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "hasDataType"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasOfficialResource",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "hasOfficialResource"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasNextState",
+    "inverse" : "15",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasNextState"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasModelElement",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasModelElement"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "30",
+    "attributes" : [ "inverse functional", "irreflexive", "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasFile",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasFile"
+    },
+    "domain" : "101",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#monitors",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "monitors"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "18",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasStateFunction",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "hasStateFunction"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasNumberOfStates",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasNumberOfStates"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#generates",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "generates"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "21",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isDeployedThrough",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "isDeployedThrough"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "20",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasTransmitter",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasTransmitter"
+    },
+    "domain" : "72",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasValue",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isParentSetElement",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "isParentSetElement"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isStandardizedBy",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isStandardizedBy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "34",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasRequirement",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "hasRequirement"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#callsAService",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "callsAService"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "32",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#finalizesSequence",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "finalizesSequence"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "96",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasDBpediaResource",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasDBpediaResource"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#standardizes",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "standardizes"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "13",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#receivesParameter",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "receivesParameter"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasAssociatedMemory",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "hasAssociatedMemory"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#initializesLoop",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "initializesLoop"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#finalizesLoop",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "finalizesLoop"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasNumberOfTasks",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "hasNumberOfTasks"
+    },
+    "domain" : "134",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasReturnDataType",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasReturnDataType"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasInteroperabilityDegree",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "hasInteroperabilityDegree"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#belongsToArchitectureLayer",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "belongsToArchitectureLayer"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isEnabled",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "isEnabled"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasRelatedOntology",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasRelatedOntology"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isActive",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "isActive"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "150"
+  }, {
+    "range" : "11",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "107",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#transmits",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "transmits"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "85",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#concernsTo",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "concernsTo"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isContextVariableOf",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isContextVariableOf"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "78",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isExecutedBy",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isExecutedBy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasAssociatedModel",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasAssociatedModel"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "110",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "42"
+  }, {
+    "range" : "11",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "11",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "11",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#belongsToSubdomain",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "belongsToSubdomain"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "110",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasURI",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "hasURI"
+    },
+    "domain" : "67",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "162"
+  }, {
+    "range" : "4",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "4",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "4",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "4",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "4",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#actsOver",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "actsOver"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "69",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasNumberOfTransitions",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "hasNumberOfTransitions"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "170"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "4",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "1",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "1",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "3",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "3",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "3",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "3",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#defines",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "defines"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "30",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "61"
+  }, {
+    "range" : "21",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "8",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "21",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "8",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasDescription",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hasDescription"
+    },
+    "domain" : "132",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "185"
+  }, {
+    "range" : "107",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "8",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "8",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasReceiver",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "hasReceiver"
+    },
+    "domain" : "72",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "189"
+  }, {
+    "range" : "78",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "78",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "78",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "21",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "34",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "34",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "13",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "11",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isCarriedOutIn",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "isCarriedOutIn"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "154",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "41"
+  }, {
+    "range" : "34",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "21",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "18",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "78",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "78",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#isVirtualizedIn",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "isVirtualizedIn"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "154",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "49"
+  }, {
+    "range" : "72",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "119",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "18",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "72",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "119",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "17",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasEmbeddingCapability",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "hasEmbeddingCapability"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#hasDomain",
+    "inverse" : "51",
+    "baseIri" : "http://www.semanticweb.org/santiago/Automation-I4.0-Ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasDomain"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "13",
+    "attributes" : [ "irreflexive", "object", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "69",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "4",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "69",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  } ]
+}

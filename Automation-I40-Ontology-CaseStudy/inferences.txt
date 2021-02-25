@@ -1,0 +1,1012 @@
+Active State Query Inference Result:
+Active State: :State-0
+Elapsed time (ms): 5035
+
+
+22-02-2021 20:36:06
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-0
+Elapsed time (ms): 4951
+
+
+22-02-2021 20:36:10
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-4
+Elapsed time (ms): 4898
+
+
+22-02-2021 20:36:15
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-4
+Elapsed time (ms): 5185
+
+
+22-02-2021 20:36:21
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Agent-I-RA-Reader
+Elapsed time (ms): 5066
+
+
+22-02-2021 20:36:26
+
+------------------------------
+
+Services per Agent Query Inference Result:
+I am: :Agent-II-RA-Separator and I offer: :Perform-Separation-Service
+I am: :Agent-III-RA-Saver and I offer: :Save-Data-Service
+I am: :Agent-I-RA-Reader and I offer: :Send-Piece-Data-Service
+Elapsed time (ms): 5610
+
+
+22-02-2021 20:36:31
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Elapsed time (ms): 5339
+
+
+22-02-2021 20:36:37
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+Elapsed time (ms): 5268
+
+
+22-02-2021 20:36:42
+
+------------------------------
+
+Agent Architecture Layer Query Inference Result:
+Agent :Agent-I-RA-Reader located in : "1"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-I-RA-Reader located in : "3"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-II-RA-Separator located in : "2"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-III-RA-Saver located in : "4"^^xsd:integer architecture layer (ISA95)
+Elapsed time (ms): 4955
+
+
+22-02-2021 20:36:47
+
+------------------------------
+
+Agent with 'controller' Description Query Inference Result:
+Agent :Agent-II-RA-Separator contains 'controller' in description
+Elapsed time (ms): 5094
+
+
+22-02-2021 20:36:52
+
+------------------------------
+
+Concurrent State Query Inference Result:
+Elapsed time (ms): 5199
+
+
+22-02-2021 20:36:57
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Agent-II-RA-Separator
+Elapsed time (ms): 5066
+
+
+22-02-2021 20:37:02
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-6
+Final State : :State-7
+Elapsed time (ms): 4952
+
+
+22-02-2021 20:37:07
+
+------------------------------
+
+Agents with High Interoperability Degree Query Inference Result:
+Elapsed time (ms): 5104
+
+
+22-02-2021 20:37:12
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+Elapsed time (ms): 5189
+
+
+22-02-2021 20:37:17
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+Elapsed time (ms): 5943
+
+
+22-02-2021 20:37:23
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Agent-I-RA-Reader
+I am a Software Resource : :Agent-III-RA-Saver
+Elapsed time (ms): 5823
+
+
+22-02-2021 20:37:29
+
+------------------------------
+
+Synchronous State Query Inference Result:
+Elapsed time (ms): 5682
+
+
+22-02-2021 20:37:35
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 concerns to devices
+Standard : :Standard-IEC-61499 concerns to devices
+Standard : :Standard-IEC-62264-ISA-95 concerns to devices
+Standard : :Standard-OPC-UA concerns to devices
+Elapsed time (ms): 5446
+
+
+22-02-2021 20:37:40
+
+------------------------------
+
+Interaction Pairs (Agents) Query Inference Result:
+Elapsed time (ms): 5502
+
+
+22-02-2021 20:37:46
+
+------------------------------
+
+Proactive Agents Query Inference Result:
+Agent :Agent-III-RA-Saver is proactive
+Elapsed time (ms): 5696
+
+
+22-02-2021 20:37:52
+
+------------------------------
+
+Reactive Agents Query Inference Result:
+Agent :Agent-I-RA-Reader is reactive
+Agent :Agent-II-RA-Separator is reactive
+Elapsed time (ms): 5169
+
+
+22-02-2021 20:37:57
+
+------------------------------
+
+Digital Twins Query Inference Result:
+Elapsed time (ms): 5690
+
+
+22-02-2021 20:38:02
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-7
+Active State: :State-6
+Elapsed time (ms): 5663
+
+
+22-02-2021 20:38:08
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-7
+Current State: :State-6
+Elapsed time (ms): 5929
+
+
+22-02-2021 20:38:14
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-0
+Elapsed time (ms): 5602
+
+
+22-02-2021 20:38:20
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-5
+Elapsed time (ms): 5983
+
+
+22-02-2021 20:38:26
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Agent-I-RA-Reader
+Elapsed time (ms): 5542
+
+
+22-02-2021 20:38:31
+
+------------------------------
+
+Services per Agent Query Inference Result:
+I am: :Agent-II-RA-Separator and I offer: :Perform-Separation-Service
+I am: :Agent-III-RA-Saver and I offer: :Save-Data-Service
+I am: :Agent-I-RA-Reader and I offer: :Send-Piece-Data-Service
+Elapsed time (ms): 6038
+
+
+22-02-2021 20:38:37
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Elapsed time (ms): 5476
+
+
+22-02-2021 20:38:43
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+Elapsed time (ms): 5824
+
+
+22-02-2021 20:38:48
+
+------------------------------
+
+Agent Architecture Layer Query Inference Result:
+Agent :Agent-I-RA-Reader located in : "1"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-I-RA-Reader located in : "3"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-II-RA-Separator located in : "2"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-III-RA-Saver located in : "4"^^xsd:integer architecture layer (ISA95)
+Elapsed time (ms): 5689
+
+
+22-02-2021 20:38:54
+
+------------------------------
+
+Agent with 'controller' Description Query Inference Result:
+Agent :Agent-II-RA-Separator contains 'controller' in description
+Elapsed time (ms): 6769
+
+
+22-02-2021 20:39:01
+
+------------------------------
+
+Concurrent State Query Inference Result:
+Elapsed time (ms): 5532
+
+
+22-02-2021 20:39:06
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Agent-II-RA-Separator
+Elapsed time (ms): 6245
+
+
+22-02-2021 20:39:13
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-6
+Final State : :State-7
+Elapsed time (ms): 6224
+
+
+22-02-2021 20:39:19
+
+------------------------------
+
+Agents with High Interoperability Degree Query Inference Result:
+Elapsed time (ms): 6954
+
+
+22-02-2021 20:39:26
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+Elapsed time (ms): 5790
+
+
+22-02-2021 20:39:32
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+Elapsed time (ms): 6390
+
+
+22-02-2021 20:39:38
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Agent-I-RA-Reader
+I am a Software Resource : :Agent-III-RA-Saver
+Elapsed time (ms): 6926
+
+
+22-02-2021 20:39:45
+
+------------------------------
+
+Synchronous State Query Inference Result:
+Elapsed time (ms): 6216
+
+
+22-02-2021 20:39:51
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 concerns to devices
+Standard : :Standard-IEC-61499 concerns to devices
+Standard : :Standard-IEC-62264-ISA-95 concerns to devices
+Standard : :Standard-OPC-UA concerns to devices
+Elapsed time (ms): 6288
+
+
+22-02-2021 20:39:58
+
+------------------------------
+
+Interaction Pairs (Agents) Query Inference Result:
+Elapsed time (ms): 7033
+
+
+22-02-2021 20:40:05
+
+------------------------------
+
+Proactive Agents Query Inference Result:
+Agent :Agent-III-RA-Saver is proactive
+Elapsed time (ms): 5824
+
+
+22-02-2021 20:40:10
+
+------------------------------
+
+Reactive Agents Query Inference Result:
+Agent :Agent-I-RA-Reader is reactive
+Agent :Agent-II-RA-Separator is reactive
+Elapsed time (ms): 6083
+
+
+22-02-2021 20:40:16
+
+------------------------------
+
+Digital Twins Query Inference Result:
+Elapsed time (ms): 6761
+
+
+22-02-2021 20:40:23
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-7
+Active State: :State-6
+Elapsed time (ms): 6150
+
+
+22-02-2021 20:40:29
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-7
+Current State: :State-6
+Elapsed time (ms): 6612
+
+
+22-02-2021 20:40:36
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-0
+Elapsed time (ms): 6147
+
+
+22-02-2021 20:40:42
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-5
+Elapsed time (ms): 6708
+
+
+22-02-2021 20:40:49
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Agent-I-RA-Reader
+Elapsed time (ms): 5712
+
+
+22-02-2021 20:40:55
+
+------------------------------
+
+Services per Agent Query Inference Result:
+I am: :Agent-II-RA-Separator and I offer: :Perform-Separation-Service
+I am: :Agent-III-RA-Saver and I offer: :Save-Data-Service
+I am: :Agent-I-RA-Reader and I offer: :Send-Piece-Data-Service
+Elapsed time (ms): 7120
+
+
+22-02-2021 20:41:02
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Elapsed time (ms): 5799
+
+
+22-02-2021 20:41:07
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+Elapsed time (ms): 5990
+
+
+22-02-2021 20:41:13
+
+------------------------------
+
+Agent Architecture Layer Query Inference Result:
+Agent :Agent-I-RA-Reader located in : "1"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-I-RA-Reader located in : "3"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-II-RA-Separator located in : "2"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-III-RA-Saver located in : "4"^^xsd:integer architecture layer (ISA95)
+Elapsed time (ms): 6852
+
+
+22-02-2021 20:41:20
+
+------------------------------
+
+Agent with 'controller' Description Query Inference Result:
+Agent :Agent-II-RA-Separator contains 'controller' in description
+Elapsed time (ms): 5944
+
+
+22-02-2021 20:41:26
+
+------------------------------
+
+Concurrent State Query Inference Result:
+Elapsed time (ms): 6839
+
+
+22-02-2021 20:41:33
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Agent-II-RA-Separator
+Elapsed time (ms): 5689
+
+
+22-02-2021 20:41:39
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-6
+Final State : :State-7
+Elapsed time (ms): 7433
+
+
+22-02-2021 20:41:46
+
+------------------------------
+
+Agents with High Interoperability Degree Query Inference Result:
+Elapsed time (ms): 5596
+
+
+22-02-2021 20:41:52
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+Elapsed time (ms): 5846
+
+
+22-02-2021 20:41:58
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+Elapsed time (ms): 7309
+
+
+22-02-2021 20:42:05
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Agent-I-RA-Reader
+I am a Software Resource : :Agent-III-RA-Saver
+Elapsed time (ms): 6043
+
+
+22-02-2021 20:42:11
+
+------------------------------
+
+Synchronous State Query Inference Result:
+Elapsed time (ms): 7566
+
+
+22-02-2021 20:42:19
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 concerns to devices
+Standard : :Standard-IEC-61499 concerns to devices
+Standard : :Standard-IEC-62264-ISA-95 concerns to devices
+Standard : :Standard-OPC-UA concerns to devices
+Elapsed time (ms): 5655
+
+
+22-02-2021 20:42:24
+
+------------------------------
+
+Interaction Pairs (Agents) Query Inference Result:
+Elapsed time (ms): 6060
+
+
+22-02-2021 20:42:30
+
+------------------------------
+
+Proactive Agents Query Inference Result:
+Agent :Agent-III-RA-Saver is proactive
+Elapsed time (ms): 7402
+
+
+22-02-2021 20:42:38
+
+------------------------------
+
+Reactive Agents Query Inference Result:
+Agent :Agent-I-RA-Reader is reactive
+Agent :Agent-II-RA-Separator is reactive
+Elapsed time (ms): 5792
+
+
+22-02-2021 20:42:44
+
+------------------------------
+
+Digital Twins Query Inference Result:
+Elapsed time (ms): 8282
+
+
+22-02-2021 20:42:52
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-7
+Active State: :State-6
+Elapsed time (ms): 5895
+
+
+22-02-2021 20:42:58
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-7
+Current State: :State-6
+Elapsed time (ms): 6388
+
+
+22-02-2021 20:43:04
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-0
+Elapsed time (ms): 7932
+
+
+22-02-2021 20:43:12
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-5
+Elapsed time (ms): 6136
+
+
+22-02-2021 20:43:18
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Agent-I-RA-Reader
+Elapsed time (ms): 6401
+
+
+22-02-2021 20:43:25
+
+------------------------------
+
+Services per Agent Query Inference Result:
+I am: :Agent-II-RA-Separator and I offer: :Perform-Separation-Service
+I am: :Agent-III-RA-Saver and I offer: :Save-Data-Service
+I am: :Agent-I-RA-Reader and I offer: :Send-Piece-Data-Service
+Elapsed time (ms): 7734
+
+
+22-02-2021 20:43:32
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Elapsed time (ms): 6139
+
+
+22-02-2021 20:43:38
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+Elapsed time (ms): 8351
+
+
+22-02-2021 20:43:47
+
+------------------------------
+
+Agent Architecture Layer Query Inference Result:
+Agent :Agent-I-RA-Reader located in : "1"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-I-RA-Reader located in : "3"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-II-RA-Separator located in : "2"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-III-RA-Saver located in : "4"^^xsd:integer architecture layer (ISA95)
+Elapsed time (ms): 6666
+
+
+22-02-2021 20:43:53
+
+------------------------------
+
+Agent with 'controller' Description Query Inference Result:
+Agent :Agent-II-RA-Separator contains 'controller' in description
+Elapsed time (ms): 6678
+
+
+22-02-2021 20:44:00
+
+------------------------------
+
+Concurrent State Query Inference Result:
+Elapsed time (ms): 8214
+
+
+22-02-2021 20:44:08
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Agent-II-RA-Separator
+Elapsed time (ms): 6247
+
+
+22-02-2021 20:44:15
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-6
+Final State : :State-7
+Elapsed time (ms): 6750
+
+
+22-02-2021 20:44:21
+
+------------------------------
+
+Agents with High Interoperability Degree Query Inference Result:
+Elapsed time (ms): 10011
+
+
+22-02-2021 20:44:31
+
+------------------------------
+
+Initial State Query Inference Result:
+Initial state : :State-0
+Elapsed time (ms): 6499
+
+
+22-02-2021 20:44:38
+
+------------------------------
+
+Services with 'database' Description Query Inference Result:
+Service : :Save-Data-Service contains 'database' in service description
+Elapsed time (ms): 7055
+
+
+22-02-2021 20:44:45
+
+------------------------------
+
+Software Resources Query Inference Result:
+I am a Software Resource : :Agent-I-RA-Reader
+I am a Software Resource : :Agent-III-RA-Saver
+Elapsed time (ms): 8865
+
+
+22-02-2021 20:44:54
+
+------------------------------
+
+Synchronous State Query Inference Result:
+Elapsed time (ms): 6615
+
+
+22-02-2021 20:45:00
+
+------------------------------
+
+Standards Which Concern to Devices Query Inference Result:
+Standard : :Standard-IEC-61131 concerns to devices
+Standard : :Standard-IEC-61499 concerns to devices
+Standard : :Standard-IEC-62264-ISA-95 concerns to devices
+Standard : :Standard-OPC-UA concerns to devices
+Elapsed time (ms): 6607
+
+
+22-02-2021 20:45:07
+
+------------------------------
+
+Interaction Pairs (Agents) Query Inference Result:
+Elapsed time (ms): 8603
+
+
+22-02-2021 20:45:16
+
+------------------------------
+
+Proactive Agents Query Inference Result:
+Agent :Agent-III-RA-Saver is proactive
+Elapsed time (ms): 6467
+
+
+22-02-2021 20:45:22
+
+------------------------------
+
+Reactive Agents Query Inference Result:
+Agent :Agent-I-RA-Reader is reactive
+Agent :Agent-II-RA-Separator is reactive
+Elapsed time (ms): 7071
+
+
+22-02-2021 20:45:29
+
+------------------------------
+
+Digital Twins Query Inference Result:
+Elapsed time (ms): 8507
+
+
+22-02-2021 20:45:38
+
+------------------------------
+
+Active State Query Inference Result:
+Active State: :State-7
+Active State: :State-6
+Elapsed time (ms): 6431
+
+
+22-02-2021 20:45:44
+
+------------------------------
+
+Current State Query Inference Result:
+Current State: :State-7
+Current State: :State-6
+Elapsed time (ms): 6815
+
+
+22-02-2021 20:45:51
+
+------------------------------
+
+Next State Query Inference Result:
+Next State: :State-0
+Elapsed time (ms): 8757
+
+
+22-02-2021 20:46:00
+
+------------------------------
+
+Previous State Query Inference Result:
+Previous State: :State-5
+Elapsed time (ms): 6407
+
+
+22-02-2021 20:46:06
+
+------------------------------
+
+Things Query Inference Result:
+I am a Thing: :Agent-I-RA-Reader
+Elapsed time (ms): 6688
+
+
+22-02-2021 20:46:13
+
+------------------------------
+
+Services per Agent Query Inference Result:
+I am: :Agent-II-RA-Separator and I offer: :Perform-Separation-Service
+I am: :Agent-III-RA-Saver and I offer: :Save-Data-Service
+I am: :Agent-I-RA-Reader and I offer: :Send-Piece-Data-Service
+Elapsed time (ms): 9652
+
+
+22-02-2021 20:46:22
+
+------------------------------
+
+Standards and Embedding Capability Query Inference Result:
+Standard: :Standard-IEC-62264-ISA-95 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-W3C | Embedding capability: "High"^^xsd:string
+Standard: :Standard-OPC-UA | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61131 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-61499 | Embedding capability: "High"^^xsd:string
+Standard: :Standard-IEC-62890 | Embedding capability: "Low"^^xsd:string
+Standard: :Standard-IEC-61512-ISA-88 | Embedding capability: "Medium"^^xsd:string
+Elapsed time (ms): 7160
+
+
+22-02-2021 20:46:30
+
+------------------------------
+
+Parent Sequences Query Inference Result:
+Parent Sequence: :Metal-Separation-Sequence
+Elapsed time (ms): 7321
+
+
+22-02-2021 20:46:37
+
+------------------------------
+
+Agent Architecture Layer Query Inference Result:
+Agent :Agent-I-RA-Reader located in : "1"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-I-RA-Reader located in : "3"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-II-RA-Separator located in : "2"^^xsd:integer architecture layer (ISA95)
+Agent :Agent-III-RA-Saver located in : "4"^^xsd:integer architecture layer (ISA95)
+Elapsed time (ms): 9809
+
+
+22-02-2021 20:46:47
+
+------------------------------
+
+Agent with 'controller' Description Query Inference Result:
+Agent :Agent-II-RA-Separator contains 'controller' in description
+Elapsed time (ms): 6937
+
+
+22-02-2021 20:46:54
+
+------------------------------
+
+Concurrent State Query Inference Result:
+Elapsed time (ms): 7527
+
+
+22-02-2021 20:47:01
+
+------------------------------
+
+Devices Query Inference Result:
+I am a Device : :Agent-II-RA-Separator
+Elapsed time (ms): 10187
+
+
+22-02-2021 20:47:11
+
+------------------------------
+
+Final State Query Inference Result:
+Final State : :State-6
+Final State : :State-7
+Elapsed time (ms): 7352
+
+
+22-02-2021 20:47:19
+
+------------------------------
+

@@ -1440,18 +1440,7 @@ public class AutomationI40OntologyFrame extends javax.swing.JFrame {
             logMessage += messageResult + "\n\n" + getDate() + " " + getHour() + "\n\n------------------------------\n\n";
             infFrame.setLog(logMessage);
             
-            startTime = System.nanoTime();
-            messageResult = "Digital Twins Query Inference Result:\n";
-            SQWRLResult q24Result = queryEngine.runSQWRLQuery("QueryAssetAndDigitalTwin");
-            while (q24Result.next()) {
-                messageResult += "Agent " + q24Result.getValue("a").toString() + " has digital twin " + q24Result.getValue("dt").toString() + " with file " + q24Result.getValue("f").toString() + "\n";
-            }
-            endTime = System.nanoTime();
-            timeElapsed = endTime - startTime;
-            messageResult += "Elapsed time (ms): " + String.valueOf(timeElapsed/1000000) + "\n";
-            jTextArea1.setText(messageResult);
-            logMessage += messageResult + "\n\n" + getDate() + " " + getHour() + "\n\n------------------------------\n\n";
-            infFrame.setLog(logMessage);
+            
 
         } catch (SQWRLException ex) {
             Logger.getLogger(AutomationI40OntologyFrame.class.getName()).log(Level.SEVERE, null, ex);

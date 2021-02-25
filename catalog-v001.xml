@@ -7,32 +7,30 @@
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/santiago/discrete-dynamics-ontology/2.0.0" uri="ddo.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/santiago/automation-I4.0-core-ontology/2.0.0" uri="Automation-I4.0-Core-Ontology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology%20-%20Application.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology%20-%20CodeGeneration.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Ontology.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I4.0-Min-Ontology%20-%20Code%20Generation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I4.0-Min-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology%20-%20Code%20Generation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/automation-I4.0-core-ontology" uri="Automation-I4.0-Core-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/discrete-dynamics-ontology" uri="ddo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/minified-standard-ontology" uri="min-std-o.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/ontologies/2018/10/discrete-dynamics-ontology" uri="First%20Version/ddo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology" uri="First%20Version/Automation-I4.0-Core-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology" uri="First%20Version/min-std-o.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="https://w3id.org/i40/rami#" uri="rami-owl.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="https://w3id.org/i40/sto" uri="First%20Version/sto-rdf.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="https://w3id.org/i40/sto#" uri="sto-owl.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/AutomationI40Ontology-Example/Automation-I4.0-Min-Ontology%20-%20Application.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="backups/Automation-I4.0-Min-Ontology%20-%20Code%20Generation_backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="backups/Automation-I4.0-Min-Ontology_backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I40-Ontology-CaseStudy/Automation-I4.0-Min-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="backups/Automation-I4.0-Ontology%20-%20Code%20Generation%20_backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="backups/Automation-I4.0-Ontology_backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I40-Ontology-CaseStudy/Automation-I4.0-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614039891992" name="shadowed:https://w3id.org/i40/sto#" uri="First%20Version/sto-owl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology%20-%20Application.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology%20-%20CodeGeneration.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Min-Ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/Automation-I4.0-Ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I4.0-Min-Ontology%20-%20Code%20Generation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I4.0-Min-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology%20-%20Code%20Generation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="duplicate:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I4.0-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/automation-I4.0-core-ontology" uri="Automation-I4.0-Core-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/discrete-dynamics-ontology" uri="ddo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/minified-standard-ontology" uri="min-std-o.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/ontologies/2018/10/discrete-dynamics-ontology" uri="First%20Version/ddo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/ontologies/2018/6/automation-I4.0-core-ontology" uri="First%20Version/Automation-I4.0-Core-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="http://www.semanticweb.org/santiago/ontologies/2018/minified-standard-ontology" uri="First%20Version/min-std-o.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="https://w3id.org/i40/rami#" uri="rami-owl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="https://w3id.org/i40/sto" uri="First%20Version/sto-rdf.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="https://w3id.org/i40/sto#" uri="sto-owl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:http://www.semanticweb.org/Automation-I4.0-Ontology" uri="First%20Version/AutomationI40Ontology-Example/Automation-I4.0-Min-Ontology%20-%20Application.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="Automation-I40-Ontology-CaseStudy/Automation-I4.0-Min-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" uri="xPPU-AI40-CaseStudy/Automation-I4.0-Min-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="Automation-I40-Ontology-CaseStudy/Automation-I4.0-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" uri="xPPU-AI40-CaseStudy/Automation-I4.0-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614207820972" name="shadowed:https://w3id.org/i40/sto#" uri="First%20Version/sto-owl.owl"/>
     </group>
 </catalog>
