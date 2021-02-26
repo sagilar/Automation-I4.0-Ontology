@@ -37,6 +37,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
+import javax.swing.tree.DefaultMutableTreeNode;
 import org.apache.commons.cli.TypeHandler;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
@@ -127,6 +128,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
     // Inference thread
     Thread inferenceThread;
     Timer inferenceTimer = new Timer();
+    
+    // Tree Messages
+    String select="";
+    String panelMessage="";
 
     /**
      * Creates new form XPPUCaseStudyFrame
@@ -138,9 +143,7 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             // Create an OWL ontology using the OWLAPI
             OWLOntologyManager ontologyManager = OWLManager.createOWLOntologyManager();
             OWLOntology ontology = ontologyManager.loadOntologyFromOntologyDocument(new File("Automation-I4.0-Min-Ontology.owl"));
-            ontologyManager.getOntologyFormat(ontology).asPrefixOWLOntologyFormat().setDefaultPrefix("http://www.semanticweb.org/santiago/Automation-I4.0-Min-Ontology" + "#");
-            System.out.println("Classes:");
-            System.out.println(ontology.getAxioms());
+            ontologyManager.getOntologyFormat(ontology).asPrefixOWLOntologyFormat().setDefaultPrefix("http://www.semanticweb.org/santiago/Automation-I4.0-Ontology" + "#");
             
             
             
@@ -157,78 +160,78 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
              **** Instances / Individuals *
              */
             //instantiating the assets
-            wpStorage = ai40ontology.createAsset("Work Piece Separation Asset");
+            wpStorage = ai40ontology.createAsset("Work_Piece_Separation_Asset");
 
             //instantiating the processes
-            xppuWPSeparation = ai40ontology.createProcessO("xPPU Work Piece separation by White, Black, and Metallic pieces");
+            xppuWPSeparation = ai40ontology.createProcessO("xPPU_Work_Piece_separation_by White,_Black,_and_Metallic_pieces");
 
             //instantiating the agents/actors
-            convBeltAgent = ai40ontology.createAgent("Agent Conveyor Belt");
-            craneAgent = ai40ontology.createAgent("Agent Crane");
-            stampAgent = ai40ontology.createAgent("Agent Stamp");
-            operator = ai40ontology.createActor("Human Operator");
+            convBeltAgent = ai40ontology.createAgent("Agent_Conveyor_Belt");
+            craneAgent = ai40ontology.createAgent("Agent_Crane");
+            stampAgent = ai40ontology.createAgent("Agent_Stamp");
+            operator = ai40ontology.createActor("Human_Operator");
 
             //States
-            standby_state = ai40ontology.createState("Stand by state - before working");
-            init_state = ai40ontology.createInitialState("Initial State WP Process");
-            state1_wp_conv_ps = ai40ontology.createState("State 1: Work Piece in ConvBelt, Presence Sensor activated");
-            state2_conv_fwd = ai40ontology.createState("State 2: ConvBelt moving forward");
-            state3_wp_light_ind_1 = ai40ontology.createState("State 3: WP reaches light and inductive sensors ramp 1");
-            state4_wp_push_cyl_1 = ai40ontology.createState("State 4: WP reaches pushing cylinder ramp 1");
-            state4_1_end_white_wp = ai40ontology.createState("State 4_1: WP is white and pushed into ramp 1 for storage");
-            state5_wp_light_ind_2 = ai40ontology.createState("State 5: WP reaches light and inductive sensors ramp 2");
-            state6_wp_push_cyl_2 = ai40ontology.createState("State 6: WP reaches pushing cylinder ramp 2");
-            state6_1_end_metallic_wp = ai40ontology.createState("State 6_1: WP is metallic and pushed into ramp 2 for storage");
-            state7_1_end_black_wp = ai40ontology.createState("State 7_1: WP is black and reaches end ramp for storage");
-            state8_conv_stop = ai40ontology.createState("State 8: ConvBelt stopping");
-            state9_conv_full = ai40ontology.createState("State 9: ConvBelt is full of capacity");
-            state9_1_conv_not_full = ai40ontology.createState("State 9_1: ConvBelt is not full of capacity");
-            stop_state = ai40ontology.createState("Stop state WP process");
+            standby_state = ai40ontology.createState("Stand_by_state_-_before_working");
+            init_state = ai40ontology.createInitialState("Initial_State_WP_Process");
+            state1_wp_conv_ps = ai40ontology.createState("State_1_Work Piece_in_ConvBelt,_Presence_Sensor_activated");
+            state2_conv_fwd = ai40ontology.createState("State_2_ConvBelt_moving_forward");
+            state3_wp_light_ind_1 = ai40ontology.createState("State_3_WP_reaches_light_and_inductive_sensors_ramp_1");
+            state4_wp_push_cyl_1 = ai40ontology.createState("State_4_WP_reaches_pushing_cylinder_ramp_1");
+            state4_1_end_white_wp = ai40ontology.createState("State_4_1_WP_is_white_and_pushed_into_ramp_1_for_storage");
+            state5_wp_light_ind_2 = ai40ontology.createState("Stat _5_WP_reaches_light_and_inductive_sensors_ramp_2");
+            state6_wp_push_cyl_2 = ai40ontology.createState("State_6_WP_reaches_pushing_cylinder_ramp_2");
+            state6_1_end_metallic_wp = ai40ontology.createState("State_6_1_WP_is_metallic_and_pushed_into_ramp_2_for_storage");
+            state7_1_end_black_wp = ai40ontology.createState("State_7_1_WP_is_black_and_reaches_end_ramp_for_storage");
+            state8_conv_stop = ai40ontology.createState("State_8_ConvBelt_stopping");
+            state9_conv_full = ai40ontology.createState("State_9_ConvBelt_is_full_of_capacity");
+            state9_1_conv_not_full = ai40ontology.createState("State9_1_ConvBelt_is_not_full_of_capacity");
+            stop_state = ai40ontology.createState("Stop_state_WP_process");
             
             //Services
-            storageService = ai40ontology.createService("Storaging Service");
-            movingService = ai40ontology.createService("Moving WPs Service");
-            stampingService = ai40ontology.createService("Stamping WPs Service");
-            bufferingService = ai40ontology.createService("Buffering Service");
+            storageService = ai40ontology.createService("Storaging_Service");
+            movingService = ai40ontology.createService("Moving_WPs_Service");
+            stampingService = ai40ontology.createService("Stamping_WPs_Service");
+            bufferingService = ai40ontology.createService("Buffering_Service");
             
             //Objects
-            convBelt = ai40ontology.createObjectO("Conveyor Belt");
+            convBelt = ai40ontology.createObjectO("Conveyor_Belt");
             crane = ai40ontology.createObjectO("Crane");
             stamp = ai40ontology.createObjectO("Stamp");
             xPPU = ai40ontology.createObjectO("xPPU");
             
             //Dynamics Model
-            xppuWPSeparationModel = ai40ontology.createDynamicsModel("xPPU separation model (Conveyor Belt sequence)");
+            xppuWPSeparationModel = ai40ontology.createDynamicsModel("xPPU_separation_model_-Conveyor_Belt_sequence-");
             
             //Inputs / Outputs
-            convBeltForward = ai40ontology.createDigitalOutput("Conveyor Belt Forward Output");
-            valvePushingCylinderRamp1 = ai40ontology.createDigitalOutput("Pushing Cylinder Ramp 1 Valve Extension Output");
-            valvePushingCylinderRamp2 = ai40ontology.createDigitalOutput("Pushing Cylinder Ramp 2 Valve Extension Output");
-            startButton = ai40ontology.createDigitalInput("Start Button");
-            stopButton = ai40ontology.createDigitalInput("Stop Button");
-            presenceSensorStart = ai40ontology.createDigitalInput("Presence Sensor Start Position");
-            presenceSensorEnd = ai40ontology.createDigitalInput("Presence Sensor End Position");
-            lightWPRamp1 = ai40ontology.createDigitalInput("Light Sensor Ramp 1");
-            lightWPRamp2 = ai40ontology.createDigitalInput("Light Sensor Ramp 2");
-            inductiveSensorRamp1 = ai40ontology.createDigitalInput("Inductive Sensor Ramp 1");
-            inductiveSensorRamp2 = ai40ontology.createDigitalInput("Inductive Sensor Ramp 2");
-            reedSwitchRamp1Extended = ai40ontology.createDigitalInput("Reed Switch Pushing Cylinder Ramp 1 Extended");
-            reedSwitchRamp1Retracted = ai40ontology.createDigitalInput("Reed Switch Pushing Cylinder Ramp 1 Retracted");
-            reedSwitchRamp2Extended = ai40ontology.createDigitalInput("Reed Switch Pushing Cylinder Ramp 2 Extended");
-            reedSwitchRamp2Retracted = ai40ontology.createDigitalInput("Reed Switch Pushing Cylinder Ramp 2 Retracted");
-            currentFillingRamp1 = ai40ontology.createDataInput("Current Filling Ramp 1");
-            currentFillingRamp2 = ai40ontology.createDataInput("Current Filling Ramp 2");
-            currentFillingRampEnd = ai40ontology.createDataInput("Current Filling Ramp End");
+            convBeltForward = ai40ontology.createDigitalOutput("Conveyor_Belt_Forward_Output");
+            valvePushingCylinderRamp1 = ai40ontology.createDigitalOutput("Pushing_Cylinder_Ramp_1_Valve_Extension_Output");
+            valvePushingCylinderRamp2 = ai40ontology.createDigitalOutput("Pushing_Cylinder_Ramp_2_Valve_Extension_Output");
+            startButton = ai40ontology.createDigitalInput("Start_Button");
+            stopButton = ai40ontology.createDigitalInput("Stop_Button");
+            presenceSensorStart = ai40ontology.createDigitalInput("Presence_Sensor_Start_Position");
+            presenceSensorEnd = ai40ontology.createDigitalInput("Presence_Sensor_End_Position");
+            lightWPRamp1 = ai40ontology.createDigitalInput("Light_Sensor_Ramp_1");
+            lightWPRamp2 = ai40ontology.createDigitalInput("Light_Sensor_Ramp_2");
+            inductiveSensorRamp1 = ai40ontology.createDigitalInput("Inductive_Sensor_Ramp_1");
+            inductiveSensorRamp2 = ai40ontology.createDigitalInput("Inductive_Sensor_Ramp_2");
+            reedSwitchRamp1Extended = ai40ontology.createDigitalInput("Reed_Switch_Pushing_Cylinder_Ramp_1_Extended");
+            reedSwitchRamp1Retracted = ai40ontology.createDigitalInput("Reed_Switch_Pushing_Cylinder_Ramp_1_Retracted");
+            reedSwitchRamp2Extended = ai40ontology.createDigitalInput("Reed_Switch_Pushing_Cylinder_Ramp_2_Extended");
+            reedSwitchRamp2Retracted = ai40ontology.createDigitalInput("Reed_Switch_Pushing_Cylinder_Ramp_2_Retracted");
+            currentFillingRamp1 = ai40ontology.createDataInput("Current_Filling_Ramp_1");
+            currentFillingRamp2 = ai40ontology.createDataInput("Current_Filling_Ramp_2");
+            currentFillingRampEnd = ai40ontology.createDataInput("Current_Filling_Ramp_End");
             
             //Digital Twins
-            convBeltShell = ai40ontology.createAdministrationShell("Digital Twin Conveyor Belt xPPU");
-            craneShell = ai40ontology.createAdministrationShell("Digital Twin Crane xPPU");
-            stampShell = ai40ontology.createAdministrationShell("Digital Twin Stamp xPPU");
+            convBeltShell = ai40ontology.createAdministrationShell("Digital_Twin_Conveyor_Belt_xPPU");
+            craneShell = ai40ontology.createAdministrationShell("Digital_Twin_Crane_xPPU");
+            stampShell = ai40ontology.createAdministrationShell("Digital_Twin_Stamp_xPPU");
             
             //Execution scopes
-            esxPPU = ai40ontology.createExecutionScope("Execution Scope xPPU - General");
-            esConvBelt = ai40ontology.createExecutionScope("Execution Scope Conveyor Belt - xPPU - Local");
-            esCrane = ai40ontology.createExecutionScope("Execution Scope Crane xPPU - Local");
+            esxPPU = ai40ontology.createExecutionScope("Execution_Scope_xPPU_-_General");
+            esConvBelt = ai40ontology.createExecutionScope("Execution_Scope_Conveyor_Belt_-_xPPU_-_Local");
+            esCrane = ai40ontology.createExecutionScope("Execution_Scope_Crane_xPPU_-_Local");
             esStamp = ai40ontology.createExecutionScope("Execution Scope Stamp xPPU - Local");
             
             /**
@@ -250,12 +253,14 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             convBeltAgent.addHasFeature("Device");
             convBeltAgent.addHasIdentifier(1);
             convBeltAgent.addHasDescription("Agent which controls the conveyor belt of the xPPU");
+            convBeltAgent.addIsVirtualizedIn(convBeltShell);
             
             craneAgent.addOffers(movingService);
             craneAgent.addHasFeature("Reactive");
             craneAgent.addHasFeature("Device");
             craneAgent.addHasIdentifier(2);
             craneAgent.addHasDescription("Agent which controls the crane of the xPPU");
+            craneAgent.addIsVirtualizedIn(craneShell);
             
             stampAgent.addOffers(stampingService);
             stampAgent.addOffers(bufferingService);
@@ -263,6 +268,7 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             stampAgent.addHasFeature("Device");
             stampAgent.addHasIdentifier(3);
             stampAgent.addHasDescription("Agent which controls the stamp of the xPPU");
+            stampAgent.addIsVirtualizedIn(stampShell);
             
             operator.addHasDescription("Human operator of xPPU plant");
             operator.addInteractsWith(convBeltAgent);
@@ -562,6 +568,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Automation Ontology I4.0 - xPPU");
@@ -579,8 +589,8 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jLabel5.setText("xPPU Case Study 11");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, -1, 40));
+        jLabel5.setText("xPPU Scenario 11");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, 40));
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -608,17 +618,176 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(102, 102, 102));
         jLabel16.setText("https://mediatum.ub.tum.de/node?id=1468863");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 610, -1, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(102, 102, 102));
         jLabel17.setText("© Santiago Gil - Automation I4.0 Ontology Project");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 630, -1, -1));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 630, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(102, 102, 102));
         jLabel18.setText("Material from TUM -AIS:https://github.com/x-PPU ");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 590, -1, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 590, -1, -1));
+
+        jScrollPane2.setBackground(new java.awt.Color(247, 242, 247));
+
+        jTree1.setFont(new java.awt.Font("Soft Elegance", 0, 12)); // NOI18N
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
+        javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Actors");
+        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Operator");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Agents");
+        javax.swing.tree.DefaultMutableTreeNode treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Conveyor Belt Agent");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Crane Agent");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Stamp Agent");
+        treeNode3.add(treeNode4);
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Objects");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Conveyor Belt");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Crane");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Stamp");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("States");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Stand By State");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Initial State");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 1");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 2");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 3");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 4");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 4.1");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 5");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 6");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 6.1");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 7");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 7.1");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 8");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 9");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("State 9.1");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Stop State");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Assets");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Work Piece Storage Asset");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Processes");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("xPPU Work Piece Separation Process - Scenario 11");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Services");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Storaging Service");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Stamping Service");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Moving Service");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Buffering Service");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Dynamics Models");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("xPPU Conveyor Belt Dynamics Model");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Variables");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Outputs");
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Conveyor Belt Forward");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Ramp 1 Valve Extension");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Ramp 2 Valve Extension");
+        treeNode3.add(treeNode4);
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Inputs");
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Presence Sensor Start");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Presence Sensor End");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Light Sensor Ramp1");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Light Sensor Ramp2");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Inductive Sensor Ramp1");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Inductive Sensor Ramp2");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Ramp1 Filling");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Ramp2 Filling");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Ramp End Filling");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Start Button");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Stop Button");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Reed Switch Ramp1 Extended");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Reed Switch Ramp1 Retracted");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Reed Switch Ramp2 Extended");
+        treeNode3.add(treeNode4);
+        treeNode4 = new javax.swing.tree.DefaultMutableTreeNode("Reed Switch Ramp2 Retracted");
+        treeNode3.add(treeNode4);
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Administration Shells");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Conveyor Belt Shell");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Crane Shell");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Stamp Shell");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Execution Scopes");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Execution Scope xPPU");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Execution Scope Conveyor Belt");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Execution Scope Crane");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Execution Scope Stamp");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jTree1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTree1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(jTree1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 290, 200));
+
+        jScrollPane3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTextPane1.setEditable(false);
+        jTextPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextPane1.setFont(new java.awt.Font("Soft Elegance", 0, 14)); // NOI18N
+        jScrollPane3.setViewportView(jTextPane1);
+
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 320, 200));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -641,6 +810,246 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
         infFrame.setVisible(true);
         infFrame.setLog(logMessage);
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jTree1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTree1MouseClicked
+        try{
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) jTree1.getLastSelectedPathComponent();
+            select=node.toString();
+
+            switch(select)
+            {
+                case "Operator":
+                panelMessage="Operator";
+                jTextPane1.setText(panelMessage);
+
+                break;
+                case "Conveyor Belt Agent":
+                panelMessage="Conveyor Belt Agent";
+                jTextPane1.setText(panelMessage);
+
+                break;
+                case "Crane Agent":
+                panelMessage="Crane Agent";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stamp Agent":
+                panelMessage="Stamp Agent"
+                ;
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Conveyor Belt":
+                panelMessage="Conveyor Belt";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Crane":
+                panelMessage="Crane";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stamp":
+                panelMessage="Stamp";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stand By State":
+                panelMessage="Stand By State";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Initial State":
+                panelMessage="Initial State";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 1":
+                panelMessage="State 1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 2":
+                panelMessage="State 2";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 3":
+                panelMessage="State 3";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 4":
+                panelMessage="State 4";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 4.1":
+                panelMessage="State 4.1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 5":
+                panelMessage="State 5";
+                jTextPane1.setText(panelMessage);
+                break;
+
+                case "State 6":
+                panelMessage="State 6";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 6.1":
+                panelMessage="State 6.1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 7":
+                panelMessage="State 7";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 7.1":
+                panelMessage="State 7.1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 8":
+                panelMessage="State 8";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "State 9":
+                panelMessage="State 9.1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stop State":
+                panelMessage="Stop State";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Work Piece Storage Asset":
+                panelMessage="Work Piece Storage Asset";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "xPPU Work Piece Separation Process - Scenario 11":
+                panelMessage="xPPU Work Piece Separation Process - Scenario 11";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Storaging Service":
+                panelMessage="Storaging Service";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stamping Service":
+                panelMessage="Stamping Service";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Moving Service":
+                panelMessage="Moving Service";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Buffering Service":
+                panelMessage="Buffering Service";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "xPPU Conveyor Belt Dynamics Model":
+                panelMessage="xPPU Conveyor Belt Dynamics Model";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Conveyor Belt Forward":
+                panelMessage="Conveyor Belt Forward";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Ramp 1 Valve Extension":
+                panelMessage="Ramp 1 Valve Extension";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Ramp 2 Valve Extension":
+                panelMessage="Ramp 2 Valve Extension";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Presence Sensor Start":
+                panelMessage="Presence Sensor Start";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Presence Sensor End":
+                panelMessage="Presence Sensor End";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Light Sensor Ramp1":
+                panelMessage="Light Sensor Ramp1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Light Sensor Ramp2":
+                panelMessage="Light Sensor Ramp2";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Inductive Sensor Ramp1":
+                panelMessage="Inductive Sensor Ramp1";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Inductive Sensor Ramp2":
+                panelMessage="Inductive Sensor Ramp2";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Ramp1 Filling":
+                panelMessage="Ramp1 Filling";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Ramp2 Filling":
+                panelMessage="Ramp2 Filling";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Ramp End Filling":
+                panelMessage="Ramp End Filling";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Start Button":
+                panelMessage="Start Button";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stop Button":
+                panelMessage="Stop Button";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Reed Switch Ramp1 Extended":
+                panelMessage="Reed Switch Ramp1 Extended";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Reed Switch Ramp1 Retracted":
+                panelMessage="Reed Switch Ramp1 Retracted";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Reed Switch Ramp2 Extended":
+                panelMessage="Reed Switch Ramp2 Extended";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Reed Switch Ramp2 Retracted":
+                panelMessage="Reed Switch Ramp2 Retracted";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Conveyor Belt Shell":
+                panelMessage="Conveyor Belt Shell";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Crane Shell":
+                panelMessage="Crane Shell";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Stamp Shell":
+                panelMessage="Stamp Shell";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Execution Scope xPPU":
+                panelMessage="Execution Scope xPPU";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Execution Scope Conveyor Belt":
+                panelMessage="Execution Scope Conveyor Belt";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Execution Scope Crane":
+                panelMessage="Execution Scope Crane";
+                jTextPane1.setText(panelMessage);
+                break;
+                case "Execution Scope Stamp":
+                panelMessage="Execution Scope Stamp";
+                jTextPane1.setText(panelMessage);
+                break;
+
+                default:
+                jTextPane1.setText("");
+                break;
+
+            }
+        }
+        catch(Exception e)
+        {
+            //System.out.println(e.toString());
+        }
+    }//GEN-LAST:event_jTree1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -693,7 +1102,7 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             long timeElapsed = endTime - startTime;
             
             startTime = System.nanoTime();
-            messageResult = "Services per Agent Query Inference Result:\n";
+            messageResult = "Services per Agent SQWRL Result:\n";
             SQWRLResult q6Result = queryEngine.runSQWRLQuery("QueryServicesPerAgent");
             while (q6Result.next()) {
                 messageResult += "I am: " + q6Result.getValue("a") + " and I offer: " + q6Result.getValue("s") + "\n";
@@ -706,8 +1115,8 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Outputs by Object Query Inference Result:\n";
-            SQWRLResult q1Result = queryEngine.runSQWRLQuery("q0_1","Output(?o) , Object(?ob) , actsOver(?o,?ob) -> sqwrl:selectDistinct(?o, ?ob)");
+            messageResult = "Outputs by Object SQWRL Result:\n";
+            SQWRLResult q1Result = queryEngine.runSQWRLQuery("q0_1","Output(?o) ^ Object(?ob)  actsOver(?o,?ob) -> sqwrl:selectDistinct(?o, ?ob)");
             while (q1Result.next()) {
                 messageResult += "Output " + q1Result.getValue("o").toString() + " acts over the object " + q1Result.getValue("ob").toString() + "\n";
             }
@@ -720,8 +1129,8 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             
             
             startTime = System.nanoTime();
-            messageResult = "Data Inputs by Object Query Inference Result:\n";
-            SQWRLResult q2Result = queryEngine.runSQWRLQuery("q0_2","DataInput(?o) , Object(?ob) , monitors(?o,?ob) -> sqwrl:selectDistinct(?o, ?ob)");
+            messageResult = "Data Inputs by Object SQWRL Result:\n";
+            SQWRLResult q2Result = queryEngine.runSQWRLQuery("q0_2","DataInput(?o) ^ Object(?ob) ^ monitors(?o,?ob) -> sqwrl:selectDistinct(?o, ?ob)");
             while (q2Result.next()) {
                 messageResult += "Input " + q2Result.getValue("o").toString() + " is a data input which monitors " + q2Result.getValue("ob").toString() + "\n";
             }
@@ -734,7 +1143,7 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             
             
             startTime = System.nanoTime();
-            messageResult = "Agent with 'xPPU' Description Query Inference Result:\n";
+            messageResult = "Agent with 'xPPU' Description SQWRL Result:\n";
             SQWRLResult q10Result = queryEngine.runSQWRLQuery("q1","Agent(?a) ^ hasDescription(?a, ?d) ^ swrlb:contains(?d, \"xPPU\") -> sqwrl:select(?a)");
             queryEngine.runSQWRLQuery("q1", "swrlb:add(?x, 2, 4) -> sqwrl:select(?x)");
             while (q10Result.next()) {
@@ -748,10 +1157,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
   
             startTime = System.nanoTime();
-            messageResult = "States of the Model Query Inference Result:\n";
-            SQWRLResult q15Result = queryEngine.runSQWRLQuery("q1_1","State(?s) , DynamicsModel(?m) , hasModelElement(?m,?s) -> sqwrl:selectDistinct(?m,?s)");
+            messageResult = "States of the Model SQWRL Result:\n";
+            SQWRLResult q15Result = queryEngine.runSQWRLQuery("q1_1","State(?s) ^ DynamicsModel(?m) ^ hasModelElement(?m,?s) -> sqwrl:selectDistinct(?m,?s)");
             while (q15Result.next()) {
-                messageResult += "Model " + q15Result.getValue("m").toString() + "contains the state" + q15Result.getValue("s").toString() + "to perform the automatic operation\n";
+                messageResult += "Model " + q15Result.getValue("m").toString() + " contains the state" + q15Result.getValue("s").toString() + " to perform the automatic operation\n";
             }
             endTime = System.nanoTime();
             timeElapsed = endTime - startTime;
@@ -761,10 +1170,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Services with 'Buffering' Description Query Inference Result:\n";
-            SQWRLResult q16Result = queryEngine.runSQWRLQuery("q2","Service(?s) , hasDescription(?s, ?d) , swrlb:contains(?d, \"Buffering\") -> sqwrl:select(?s)");
+            messageResult = "Services with 'buffering' Description SQWRL Result:\n";
+            SQWRLResult q16Result = queryEngine.runSQWRLQuery("q2","Service(?s) ^ hasDescription(?s, ?d) ^ offers(?a,?s) ^  swrlb:contains(?d, \"buffering\") -> sqwrl:select(?s,?a)");
             while (q16Result.next()) {
-                messageResult += "Service : " + q16Result.getValue("s").toString() + " contains 'Buffering' in service description\n";
+                messageResult += "Service : " + q16Result.getValue("s").toString() + " contains 'buffering' in service description, provided by agent " + q16Result.getValue("a").toString() + "\n";
             }
             endTime = System.nanoTime();
             timeElapsed = endTime - startTime;
@@ -775,7 +1184,7 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             
             
             startTime = System.nanoTime();
-            messageResult = "Reactive Agents Query Inference Result:\n";
+            messageResult = "Reactive Agents SQWRL Result:\n";
             SQWRLResult q23Result = queryEngine.runSQWRLQuery("QueryReactiveAgents");
             while (q23Result.next()) {
                 messageResult += "Agent " + q23Result.getValue("a").toString() + " is reactive\n";
@@ -788,8 +1197,8 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Digital Twins Query Inference Result:\n";
-            SQWRLResult q24Result = queryEngine.runSQWRLQuery("q3","Agent(?a) , isVirtualizedIn(?a, ?dt) , AdministrationShell(?dt) , hasFile(?dt, ?f) -> sqwrl:selectDistinct(?a, ?dt, ?f)");
+            messageResult = "Digital Twins SQWRL Result:\n";
+            SQWRLResult q24Result = queryEngine.runSQWRLQuery("q3","Agent(?a) ^ isVirtualizedIn(?a, ?dt) ^ AdministrationShell(?dt) ^ hasFile(?dt, ?f) -> sqwrl:selectDistinct(?a, ?dt, ?f)");
             while (q24Result.next()) {
                 messageResult += "Agent " + q24Result.getValue("a").toString() + " has digital twin " + q24Result.getValue("dt").toString() + " with file " + q24Result.getValue("f").toString() + "\n";
             }
@@ -801,10 +1210,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Count of Agents Query Inference Result:\n";
+            messageResult = "Count of Agents SQWRL Result:\n";
             SQWRLResult q25Result = queryEngine.runSQWRLQuery("q4","Agent(?a) -> sqwrl:count(?a)");
             while (q25Result.next()) {
-                messageResult += "Count of agents: " + q25Result.getValue("a").toString() + "\n";
+                messageResult += "Count of agents: " + q25Result.getValue(0).toString() + "\n";
             }
             endTime = System.nanoTime();
             timeElapsed = endTime - startTime;
@@ -814,10 +1223,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Count of outputs Query Inference Result:\n";
+            messageResult = "Count of outputs SQWRL Result:\n";
             SQWRLResult q26Result = queryEngine.runSQWRLQuery("q5","Output(?o) -> sqwrl:count(?o)");
             while (q26Result.next()) {
-                messageResult += "Count of outputs: " + q26Result.getValue("o").toString() + "\n";
+                messageResult += "Count of outputs: " + q26Result.getValue(0).toString() + "\n";
             }
             endTime = System.nanoTime();
             timeElapsed = endTime - startTime;
@@ -827,10 +1236,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
             infFrame.setLog(logMessage);
             
             startTime = System.nanoTime();
-            messageResult = "Count of inputs Query Inference Result:\n";
+            messageResult = "Count of inputs SQWRL Result:\n";
             SQWRLResult q27Result = queryEngine.runSQWRLQuery("q6","Input(?i) -> sqwrl:count(?i)");
             while (q27Result.next()) {
-                messageResult += "Count of inputs: " + q27Result.getValue("i").toString() + "\n";
+                messageResult += "Count of inputs: " + q27Result.getValue(0).toString() + "\n";
             }
             endTime = System.nanoTime();
             timeElapsed = endTime - startTime;
@@ -889,6 +1298,10 @@ public class XPPUCaseStudyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextPane jTextPane1;
+    public javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }

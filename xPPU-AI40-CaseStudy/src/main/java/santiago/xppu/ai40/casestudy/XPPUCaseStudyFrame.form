@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.7" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Automation Ontology I4.0 - xPPU"/>
@@ -80,11 +80,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="xPPU Case Study 11"/>
+            <Property name="text" type="java.lang.String" value="xPPU Scenario 11"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="640" y="70" width="-1" height="40"/>
+              <AbsoluteConstraints x="70" y="90" width="-1" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -159,7 +159,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="620" y="610" width="-1" height="-1"/>
+              <AbsoluteConstraints x="610" y="610" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -175,7 +175,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="620" y="630" width="-1" height="-1"/>
+              <AbsoluteConstraints x="610" y="630" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -191,10 +191,74 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="620" y="590" width="-1" height="-1"/>
+              <AbsoluteConstraints x="610" y="590" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f7" green="f2" red="f7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="70" y="130" width="290" height="200"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTree" name="jTree1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Soft Elegance" size="12" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.tree.TreeModel" editor="org.netbeans.modules.form.editors2.TreeModelEditor">
+                  <TreeModel code="Actors&#xa; Operator&#xa; Agents&#xa;  Conveyor Belt Agent&#xa;  Crane Agent&#xa;  Stamp Agent&#xa;Objects&#xa; Conveyor Belt&#xa; Crane&#xa; Stamp&#xa;States&#xa; Stand By State&#xa; Initial State&#xa; State 1&#xa; State 2&#xa; State 3&#xa; State 4&#xa; State 4.1&#xa; State 5&#xa; State 6&#xa; State 6.1&#xa; State 7&#xa; State 7.1&#xa; State 8&#xa; State 9&#xa; State 9.1&#xa; Stop State&#xa;Assets&#xa; Work Piece Storage Asset&#xa;Processes&#xa; xPPU Work Piece Separation Process - Scenario 11&#xa;Services&#xa; Storaging Service&#xa; Stamping Service&#xa; Moving Service&#xa; Buffering Service&#xa;Dynamics Models&#xa; xPPU Conveyor Belt Dynamics Model&#xa;Variables&#xa; Outputs&#xa;  Conveyor Belt Forward&#xa;  Ramp 1 Valve Extension&#xa;  Ramp 2 Valve Extension&#xa; Inputs&#xa;  Presence Sensor Start&#xa;  Presence Sensor End&#xa;  Light Sensor Ramp1&#xa;  Light Sensor Ramp2&#xa;  Inductive Sensor Ramp1&#xa;  Inductive Sensor Ramp2&#xa;  Ramp1 Filling&#xa;  Ramp2 Filling&#xa;  Ramp End Filling&#xa;  Start Button&#xa;  Stop Button&#xa;  Reed Switch Ramp1 Extended&#xa;  Reed Switch Ramp1 Retracted&#xa;  Reed Switch Ramp2 Extended&#xa;  Reed Switch Ramp2 Retracted&#xa;Administration Shells&#xa; Conveyor Belt Shell&#xa; Crane Shell&#xa; Stamp Shell&#xa;Execution Scopes&#xa; Execution Scope xPPU&#xa; Execution Scope Conveyor Belt&#xa; Execution Scope Crane&#xa; Execution Scope Stamp"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTree1MouseClicked"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTree()"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="400" y="130" width="320" height="200"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextPane" name="jTextPane1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Soft Elegance" size="14" style="0"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTextPane1.setEditable(false);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

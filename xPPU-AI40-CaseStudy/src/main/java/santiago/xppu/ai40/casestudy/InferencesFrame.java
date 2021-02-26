@@ -71,7 +71,7 @@ public class InferencesFrame extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(204, 227, 253));
         jButton1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jButton1.setText("Export Log to Text");
+        jButton1.setText("Export Log to File");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
