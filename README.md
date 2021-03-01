@@ -1,8 +1,8 @@
 # Automation I4.0 Ontology Project
 
-<img src="../images/Java%20Application%20GUI%20v2.png">
+<img src="images/Java%20Application%20GUI%20v2.png">
 
-<img src="../images/webvowl-full-ontology_2.png">
+<img src="images/webvowl-full-ontology_2.png">
 
 ### Update 03/2021
 - Incorporation of the RAMI Ontology (https://github.com/i40-Tools/RAMIOntology).
