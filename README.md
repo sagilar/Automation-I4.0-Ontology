@@ -1,15 +1,17 @@
-# Automation I4.0 Ontology
-Architecture of the Ontology:  
-<img src="images/FrameworkArchitecture.png">
+# Automation I4.0 Ontology Project
 
-Composition of the semantic model and all the proposal - The Model Framework:  
-<img src="images/Framework.png">
+<img src="../images/Java%20Application%20GUI%20v2.png">
 
+<img src="../images/webvowl-full-ontology_2.png">
 
-### Update 22/02/2021
-- Inclusion of RAMI Ontology (https://github.com/i40-Tools/RAMIOntology).
+### Update 03/2021
+- Incorporation of the RAMI Ontology (https://github.com/i40-Tools/RAMIOntology).
 - Change of classes and relations. Extended concepts.
-- Change of application code.
+- There are 2 case studies: A basic metal separation process and a scenario of the x-PPU of AIS TUM (please see https://github.com/x-PPU and https://mediatum.ub.tum.de/doc/1208973).
+- The Java applications for both case studies now use Maven for the management of dependencies.
+- All the owl files now use the RDF/XML serialization.
+- Json ontology files are now available in the folder `webvowl` to be visualized on a web browser.
+- The folder `Generated Java Code` has the java generated code provided by Protégé of both the Automation I4.0 Ontologies, the full and short versions.
 
 ### Update 20/05/2019
 The description and code of the SWRL rules and OWL Expressions are available in the document `SWRL Rules and OWL Expressions - Automation I4.0 Ontology.docx` discriminated by ontology.
@@ -56,25 +58,23 @@ It has some well-defined SWRL rules.
 
 ### STO
 The Standards Ontology is a work done by Irlán Grangel, Steffen Lohman, and Paul Baptista at Fraunhofer IAIS. Please see https://github.com/i40-Tools/StandardOntology , https://vocol.iais.fraunhofer.de/sto/ for more details.  
-I make a special acknowledge for such work and their support with the STO code.  
 
+### RAMI Ontology
+The RAMI Ontology which bases on the RAMI Model and the Administration Shell concept. Please see https://github.com/i40-Tools/RAMIOntology, https://vocol.iais.fraunhofer.de/rami/ for more details.
 
 ## Research
 This project was carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
 I keep on doing enhancements and adding new features.  
-Please cite:  
+If you use any resources of this project for your research please cite:  
 - "Semantic Automation Systems, a Suitable Approach for Automation Networks in the Industry 4.0", https://ieeexplore.ieee.org/document/8921156.
 
 
-## Applications
-The Automation I4.0 Ontology was designed to work in real systems, thus, the folder `AutomationI40Ontology-Example` contains a Java project which runs the ontology over a metal separation process system (emulated) and an OPC UA server using the Eclipse Milo stack.  
-The application contains a subfolder `OPC UA Clients` which has two python files which run the OPC UA clientes using the Free OPC UA stack in 1 or 2 Raspberry(ies) PI.  
-Additional features like the process, SQWRL queries, and inference exportation are provided.  
-See folder for more detail.
+## Cases
+Check the folders `Automation-I40-Ontology-CaseStudy` and `xPPU-AI40-CaseStudy` to see 2 Java maven applications using the Automation I4.0 Ontology.  
 
 ## Contribution and support
 If you are interested in contribute to this project, feel free to do it.  
-Regarding to the support, I am working on it continuosly, so, if any problem appears, do not hesitate to create an issue.  
+Regarding to the support, I am working on it continuously, so, if any problem appears, do not hesitate to create an issue.  
 
 ## License
 Automation-I4.0-Ontology is licensed by an Apache License 2.0 (see http://www.apache.org/licenses/LICENSE-2.0 for more details).  
