@@ -3,10 +3,10 @@ I am: :Agent_Crane and I offer: :Moving_WPs_Service
 I am: :Agent_Conveyor_Belt and I offer: :Storaging_Service
 I am: :Agent_Stamp and I offer: :Stamping_WPs_Service
 I am: :Agent_Stamp and I offer: :Buffering_Service
-Elapsed time (ms): 8599
+Elapsed time (ms): 4153
 
 
-26-02-2021 14:42:22
+01-03-2021 15:38:52
 
 ------------------------------
 
@@ -14,10 +14,10 @@ Outputs by Object SQWRL Result:
 Output :Conveyor_Belt_Forward_Output acts over the object :Conveyor_Belt
 Output :Pushing_Cylinder_Ramp_1_Valve_Extension_Output acts over the object :Conveyor_Belt
 Output :Pushing_Cylinder_Ramp_2_Valve_Extension_Output acts over the object :Conveyor_Belt
-Elapsed time (ms): 8984
+Elapsed time (ms): 4805
 
 
-26-02-2021 14:42:31
+01-03-2021 15:38:57
 
 ------------------------------
 
@@ -25,10 +25,10 @@ Data Inputs by Object SQWRL Result:
 Input :Current_Filling_Ramp_1 is a data input which monitors :Conveyor_Belt
 Input :Current_Filling_Ramp_2 is a data input which monitors :Conveyor_Belt
 Input :Current_Filling_Ramp_End is a data input which monitors :Conveyor_Belt
-Elapsed time (ms): 8919
+Elapsed time (ms): 4544
 
 
-26-02-2021 14:42:40
+01-03-2021 15:39:01
 
 ------------------------------
 
@@ -36,10 +36,10 @@ Agent with 'xPPU' Description SQWRL Result:
 Agent :Agent_Crane contains 'xPPU' in description
 Agent :Agent_Stamp contains 'xPPU' in description
 Agent :Agent_Conveyor_Belt contains 'xPPU' in description
-Elapsed time (ms): 20846
+Elapsed time (ms): 9422
 
 
-26-02-2021 14:43:01
+01-03-2021 15:39:11
 
 ------------------------------
 
@@ -59,19 +59,19 @@ Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_7
 Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_8_ConvBelt_stopping to perform the automatic operation
 Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_9_ConvBelt_is_full_of_capacity to perform the automatic operation
 Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stop_state_WP_process to perform the automatic operation
-Elapsed time (ms): 11937
+Elapsed time (ms): 4747
 
 
-26-02-2021 14:43:13
+01-03-2021 15:39:15
 
 ------------------------------
 
 Services with 'buffering' Description SQWRL Result:
 Service : :Buffering_Service contains 'buffering' in service description, provided by agent :Agent_Stamp
-Elapsed time (ms): 11203
+Elapsed time (ms): 5103
 
 
-26-02-2021 14:43:24
+01-03-2021 15:39:21
 
 ------------------------------
 
@@ -79,48 +79,48 @@ Reactive Agents SQWRL Result:
 Agent :Agent_Conveyor_Belt is reactive
 Agent :Agent_Crane is reactive
 Agent :Agent_Stamp is reactive
-Elapsed time (ms): 9246
+Elapsed time (ms): 5058
 
 
-26-02-2021 14:43:33
+01-03-2021 15:39:26
 
 ------------------------------
 
 Digital Twins SQWRL Result:
-Agent :Agent_Conveyor_Belt has digital twin :Digital_Twin_Conveyor_Belt_xPPU with file "xppu_conveyor_belt_example.aasx"^^xsd:string
-Agent :Agent_Crane has digital twin :Digital_Twin_Crane_xPPU with file "xppu_crane_example.aasx"^^xsd:string
-Agent :Agent_Stamp has digital twin :Digital_Twin_Stamp_xPPU with file "xppu_stamp_example.aasx"^^xsd:string
-Elapsed time (ms): 8431
+Agent :Agent_Conveyor_Belt has digital twin :Digital_Twin_Conveyor_Belt_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#LargeSortingConveyor*"^^xsd:string
+Agent :Agent_Crane has digital twin :Digital_Twin_Crane_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Crane*"^^xsd:string
+Agent :Agent_Stamp has digital twin :Digital_Twin_Stamp_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Stamp*"^^xsd:string
+Elapsed time (ms): 5458
 
 
-26-02-2021 14:43:41
+01-03-2021 15:39:31
 
 ------------------------------
 
 Count of Agents SQWRL Result:
 Count of agents: "3"^^xsd:int
-Elapsed time (ms): 8911
+Elapsed time (ms): 5691
 
 
-26-02-2021 14:43:50
+01-03-2021 15:39:37
 
 ------------------------------
 
 Count of outputs SQWRL Result:
 Count of outputs: "3"^^xsd:int
-Elapsed time (ms): 8898
+Elapsed time (ms): 5177
 
 
-26-02-2021 14:43:59
+01-03-2021 15:39:42
 
 ------------------------------
 
 Count of inputs SQWRL Result:
 Count of inputs: "15"^^xsd:int
-Elapsed time (ms): 8970
+Elapsed time (ms): 5307
 
 
-26-02-2021 14:44:08
+01-03-2021 15:39:47
 
 ------------------------------
 
@@ -129,10 +129,388 @@ I am: :Agent_Crane and I offer: :Moving_WPs_Service
 I am: :Agent_Conveyor_Belt and I offer: :Storaging_Service
 I am: :Agent_Stamp and I offer: :Stamping_WPs_Service
 I am: :Agent_Stamp and I offer: :Buffering_Service
-Elapsed time (ms): 8998
+Elapsed time (ms): 5208
 
 
-26-02-2021 14:44:17
+01-03-2021 15:39:53
+
+------------------------------
+
+Outputs by Object SQWRL Result:
+Output :Conveyor_Belt_Forward_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_1_Valve_Extension_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_2_Valve_Extension_Output acts over the object :Conveyor_Belt
+Elapsed time (ms): 5338
+
+
+01-03-2021 15:39:58
+
+------------------------------
+
+Data Inputs by Object SQWRL Result:
+Input :Current_Filling_Ramp_1 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_2 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_End is a data input which monitors :Conveyor_Belt
+Elapsed time (ms): 5307
+
+
+01-03-2021 15:40:03
+
+------------------------------
+
+Agent with 'xPPU' Description SQWRL Result:
+Agent :Agent_Crane contains 'xPPU' in description
+Agent :Agent_Stamp contains 'xPPU' in description
+Agent :Agent_Conveyor_Belt contains 'xPPU' in description
+Elapsed time (ms): 11151
+
+
+01-03-2021 15:40:14
+
+------------------------------
+
+States of the Model SQWRL Result:
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen1:_5_WP_reaches_light_and_inductive_sensors_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen4:_Presence_Sensor_activated to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Initial_State_WP_Process to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stand_by_state_-_before_working to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State9_1_ConvBelt_is_not_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_2_ConvBelt_moving_forward to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_3_WP_reaches_light_and_inductive_sensors_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_1_WP_is_white_and_pushed_into_ramp_1_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_WP_reaches_pushing_cylinder_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_1_WP_is_metallic_and_pushed_into_ramp_2_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_WP_reaches_pushing_cylinder_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_7_1_WP_is_black_and_reaches_end_ramp_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_8_ConvBelt_stopping to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_9_ConvBelt_is_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stop_state_WP_process to perform the automatic operation
+Elapsed time (ms): 6424
+
+
+01-03-2021 15:40:21
+
+------------------------------
+
+Services with 'buffering' Description SQWRL Result:
+Service : :Buffering_Service contains 'buffering' in service description, provided by agent :Agent_Stamp
+Elapsed time (ms): 5085
+
+
+01-03-2021 15:40:26
+
+------------------------------
+
+Reactive Agents SQWRL Result:
+Agent :Agent_Conveyor_Belt is reactive
+Agent :Agent_Crane is reactive
+Agent :Agent_Stamp is reactive
+Elapsed time (ms): 5253
+
+
+01-03-2021 15:40:31
+
+------------------------------
+
+Digital Twins SQWRL Result:
+Agent :Agent_Conveyor_Belt has digital twin :Digital_Twin_Conveyor_Belt_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#LargeSortingConveyor*"^^xsd:string
+Agent :Agent_Crane has digital twin :Digital_Twin_Crane_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Crane*"^^xsd:string
+Agent :Agent_Stamp has digital twin :Digital_Twin_Stamp_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Stamp*"^^xsd:string
+Elapsed time (ms): 6126
+
+
+01-03-2021 15:40:37
+
+------------------------------
+
+Count of Agents SQWRL Result:
+Count of agents: "3"^^xsd:int
+Elapsed time (ms): 5368
+
+
+01-03-2021 15:40:43
+
+------------------------------
+
+Count of outputs SQWRL Result:
+Count of outputs: "3"^^xsd:int
+Elapsed time (ms): 5627
+
+
+01-03-2021 15:40:48
+
+------------------------------
+
+Count of inputs SQWRL Result:
+Count of inputs: "15"^^xsd:int
+Elapsed time (ms): 5426
+
+
+01-03-2021 15:40:54
+
+------------------------------
+
+Services per Agent SQWRL Result:
+I am: :Agent_Crane and I offer: :Moving_WPs_Service
+I am: :Agent_Conveyor_Belt and I offer: :Storaging_Service
+I am: :Agent_Stamp and I offer: :Stamping_WPs_Service
+I am: :Agent_Stamp and I offer: :Buffering_Service
+Elapsed time (ms): 6282
+
+
+01-03-2021 15:41:00
+
+------------------------------
+
+Outputs by Object SQWRL Result:
+Output :Conveyor_Belt_Forward_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_1_Valve_Extension_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_2_Valve_Extension_Output acts over the object :Conveyor_Belt
+Elapsed time (ms): 5922
+
+
+01-03-2021 15:41:06
+
+------------------------------
+
+Data Inputs by Object SQWRL Result:
+Input :Current_Filling_Ramp_1 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_2 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_End is a data input which monitors :Conveyor_Belt
+Elapsed time (ms): 5589
+
+
+01-03-2021 15:41:11
+
+------------------------------
+
+Agent with 'xPPU' Description SQWRL Result:
+Agent :Agent_Crane contains 'xPPU' in description
+Agent :Agent_Stamp contains 'xPPU' in description
+Agent :Agent_Conveyor_Belt contains 'xPPU' in description
+Elapsed time (ms): 11351
+
+
+01-03-2021 15:41:23
+
+------------------------------
+
+States of the Model SQWRL Result:
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen1:_5_WP_reaches_light_and_inductive_sensors_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen4:_Presence_Sensor_activated to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Initial_State_WP_Process to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stand_by_state_-_before_working to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State9_1_ConvBelt_is_not_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_2_ConvBelt_moving_forward to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_3_WP_reaches_light_and_inductive_sensors_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_1_WP_is_white_and_pushed_into_ramp_1_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_WP_reaches_pushing_cylinder_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_1_WP_is_metallic_and_pushed_into_ramp_2_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_WP_reaches_pushing_cylinder_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_7_1_WP_is_black_and_reaches_end_ramp_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_8_ConvBelt_stopping to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_9_ConvBelt_is_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stop_state_WP_process to perform the automatic operation
+Elapsed time (ms): 6007
+
+
+01-03-2021 15:41:29
+
+------------------------------
+
+Services with 'buffering' Description SQWRL Result:
+Service : :Buffering_Service contains 'buffering' in service description, provided by agent :Agent_Stamp
+Elapsed time (ms): 5799
+
+
+01-03-2021 15:41:35
+
+------------------------------
+
+Reactive Agents SQWRL Result:
+Agent :Agent_Conveyor_Belt is reactive
+Agent :Agent_Crane is reactive
+Agent :Agent_Stamp is reactive
+Elapsed time (ms): 6169
+
+
+01-03-2021 15:41:41
+
+------------------------------
+
+Digital Twins SQWRL Result:
+Agent :Agent_Conveyor_Belt has digital twin :Digital_Twin_Conveyor_Belt_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#LargeSortingConveyor*"^^xsd:string
+Agent :Agent_Crane has digital twin :Digital_Twin_Crane_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Crane*"^^xsd:string
+Agent :Agent_Stamp has digital twin :Digital_Twin_Stamp_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Stamp*"^^xsd:string
+Elapsed time (ms): 6240
+
+
+01-03-2021 15:41:47
+
+------------------------------
+
+Count of Agents SQWRL Result:
+Count of agents: "3"^^xsd:int
+Elapsed time (ms): 5508
+
+
+01-03-2021 15:41:53
+
+------------------------------
+
+Count of outputs SQWRL Result:
+Count of outputs: "3"^^xsd:int
+Elapsed time (ms): 6454
+
+
+01-03-2021 15:41:59
+
+------------------------------
+
+Count of inputs SQWRL Result:
+Count of inputs: "15"^^xsd:int
+Elapsed time (ms): 5931
+
+
+01-03-2021 15:42:05
+
+------------------------------
+
+Services per Agent SQWRL Result:
+I am: :Agent_Crane and I offer: :Moving_WPs_Service
+I am: :Agent_Conveyor_Belt and I offer: :Storaging_Service
+I am: :Agent_Stamp and I offer: :Stamping_WPs_Service
+I am: :Agent_Stamp and I offer: :Buffering_Service
+Elapsed time (ms): 6351
+
+
+01-03-2021 15:42:11
+
+------------------------------
+
+Outputs by Object SQWRL Result:
+Output :Conveyor_Belt_Forward_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_1_Valve_Extension_Output acts over the object :Conveyor_Belt
+Output :Pushing_Cylinder_Ramp_2_Valve_Extension_Output acts over the object :Conveyor_Belt
+Elapsed time (ms): 5730
+
+
+01-03-2021 15:42:17
+
+------------------------------
+
+Data Inputs by Object SQWRL Result:
+Input :Current_Filling_Ramp_1 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_2 is a data input which monitors :Conveyor_Belt
+Input :Current_Filling_Ramp_End is a data input which monitors :Conveyor_Belt
+Elapsed time (ms): 6626
+
+
+01-03-2021 15:42:24
+
+------------------------------
+
+Agent with 'xPPU' Description SQWRL Result:
+Agent :Agent_Crane contains 'xPPU' in description
+Agent :Agent_Stamp contains 'xPPU' in description
+Agent :Agent_Conveyor_Belt contains 'xPPU' in description
+Elapsed time (ms): 12661
+
+
+01-03-2021 15:42:36
+
+------------------------------
+
+States of the Model SQWRL Result:
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen1:_5_WP_reaches_light_and_inductive_sensors_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the stateautogen4:_Presence_Sensor_activated to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Initial_State_WP_Process to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stand_by_state_-_before_working to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State9_1_ConvBelt_is_not_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_2_ConvBelt_moving_forward to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_3_WP_reaches_light_and_inductive_sensors_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_1_WP_is_white_and_pushed_into_ramp_1_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_4_WP_reaches_pushing_cylinder_ramp_1 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_1_WP_is_metallic_and_pushed_into_ramp_2_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_6_WP_reaches_pushing_cylinder_ramp_2 to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_7_1_WP_is_black_and_reaches_end_ramp_for_storage to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_8_ConvBelt_stopping to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:State_9_ConvBelt_is_full_of_capacity to perform the automatic operation
+Model :xPPU_separation_model_-Conveyor_Belt_sequence- contains the state:Stop_state_WP_process to perform the automatic operation
+Elapsed time (ms): 5937
+
+
+01-03-2021 15:42:42
+
+------------------------------
+
+Services with 'buffering' Description SQWRL Result:
+Service : :Buffering_Service contains 'buffering' in service description, provided by agent :Agent_Stamp
+Elapsed time (ms): 6835
+
+
+01-03-2021 15:42:49
+
+------------------------------
+
+Reactive Agents SQWRL Result:
+Agent :Agent_Conveyor_Belt is reactive
+Agent :Agent_Crane is reactive
+Agent :Agent_Stamp is reactive
+Elapsed time (ms): 6062
+
+
+01-03-2021 15:42:55
+
+------------------------------
+
+Digital Twins SQWRL Result:
+Agent :Agent_Conveyor_Belt has digital twin :Digital_Twin_Conveyor_Belt_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#LargeSortingConveyor*"^^xsd:string
+Agent :Agent_Crane has digital twin :Digital_Twin_Crane_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Crane*"^^xsd:string
+Agent :Agent_Stamp has digital twin :Digital_Twin_Stamp_xPPU with file "models/Papyrus-Scenario_11/model_Sc11.uml#Stamp*"^^xsd:string
+Elapsed time (ms): 6934
+
+
+01-03-2021 15:43:02
+
+------------------------------
+
+Count of Agents SQWRL Result:
+Count of agents: "3"^^xsd:int
+Elapsed time (ms): 6197
+
+
+01-03-2021 15:43:08
+
+------------------------------
+
+Count of outputs SQWRL Result:
+Count of outputs: "3"^^xsd:int
+Elapsed time (ms): 7147
+
+
+01-03-2021 15:43:15
+
+------------------------------
+
+Count of inputs SQWRL Result:
+Count of inputs: "15"^^xsd:int
+Elapsed time (ms): 6242
+
+
+01-03-2021 15:43:22
+
+------------------------------
+
+Services per Agent SQWRL Result:
+I am: :Agent_Crane and I offer: :Moving_WPs_Service
+I am: :Agent_Conveyor_Belt and I offer: :Storaging_Service
+I am: :Agent_Stamp and I offer: :Stamping_WPs_Service
+I am: :Agent_Stamp and I offer: :Buffering_Service
+Elapsed time (ms): 7103
+
+
+01-03-2021 15:43:29
 
 ------------------------------
 

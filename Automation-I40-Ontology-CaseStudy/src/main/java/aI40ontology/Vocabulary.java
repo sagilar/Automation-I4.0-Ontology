@@ -921,7 +921,7 @@ public class Vocabulary {
      * A constant to give access to the Manchester OWL API representation of the object property OWL:TOPOBJECTPROPERTY.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_OWL:TOPOBJECTPROPERTY = factory.getOWLObjectProperty(IRI.create("http://www.w3.org/2002/07/owl#topObjectProperty"));
+    //public static final OWLObjectProperty OBJECT_PROPERTY_OWL:TOPOBJECTPROPERTY = factory.getOWLObjectProperty(IRI.create("http://www.w3.org/2002/07/owl#topObjectProperty"));
 
     /* ***************************************************
      * Data Property http://www.semanticweb.org/santiago/Automation-I4.0-Ontology#belongsToArchitectureLayer
@@ -1251,7 +1251,7 @@ public class Vocabulary {
      * A constant to give access to the Manchester OWL API representation of the data property OWL:TOPDATAPROPERTY.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_OWL:TOPDATAPROPERTY = factory.getOWLDataProperty(IRI.create("http://www.w3.org/2002/07/owl#topDataProperty"));
+    //public static final OWLDataProperty DATA_PROPERTY_OWL:TOPDATAPROPERTY = factory.getOWLDataProperty(IRI.create("http://www.w3.org/2002/07/owl#topDataProperty"));
 
 
 }

@@ -212,10 +212,10 @@
             <Component class="javax.swing.JTree" name="jTree1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Soft Elegance" size="12" style="0"/>
+                  <Font name="Century Gothic" size="12" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.tree.TreeModel" editor="org.netbeans.modules.form.editors2.TreeModelEditor">
-                  <TreeModel code="Actors&#xa; Operator&#xa; Agents&#xa;  Conveyor Belt Agent&#xa;  Crane Agent&#xa;  Stamp Agent&#xa;Objects&#xa; Conveyor Belt&#xa; Crane&#xa; Stamp&#xa;States&#xa; Stand By State&#xa; Initial State&#xa; State 1&#xa; State 2&#xa; State 3&#xa; State 4&#xa; State 4.1&#xa; State 5&#xa; State 6&#xa; State 6.1&#xa; State 7&#xa; State 7.1&#xa; State 8&#xa; State 9&#xa; State 9.1&#xa; Stop State&#xa;Assets&#xa; Work Piece Storage Asset&#xa;Processes&#xa; xPPU Work Piece Separation Process - Scenario 11&#xa;Services&#xa; Storaging Service&#xa; Stamping Service&#xa; Moving Service&#xa; Buffering Service&#xa;Dynamics Models&#xa; xPPU Conveyor Belt Dynamics Model&#xa;Variables&#xa; Outputs&#xa;  Conveyor Belt Forward&#xa;  Ramp 1 Valve Extension&#xa;  Ramp 2 Valve Extension&#xa; Inputs&#xa;  Presence Sensor Start&#xa;  Presence Sensor End&#xa;  Light Sensor Ramp1&#xa;  Light Sensor Ramp2&#xa;  Inductive Sensor Ramp1&#xa;  Inductive Sensor Ramp2&#xa;  Ramp1 Filling&#xa;  Ramp2 Filling&#xa;  Ramp End Filling&#xa;  Start Button&#xa;  Stop Button&#xa;  Reed Switch Ramp1 Extended&#xa;  Reed Switch Ramp1 Retracted&#xa;  Reed Switch Ramp2 Extended&#xa;  Reed Switch Ramp2 Retracted&#xa;Administration Shells&#xa; Conveyor Belt Shell&#xa; Crane Shell&#xa; Stamp Shell&#xa;Execution Scopes&#xa; Execution Scope xPPU&#xa; Execution Scope Conveyor Belt&#xa; Execution Scope Crane&#xa; Execution Scope Stamp"/>
+                  <TreeModel code="Actors&#xa; Operator&#xa; Agents&#xa;  Conveyor Belt Agent&#xa;  Crane Agent&#xa;  Stamp Agent&#xa;Objects&#xa; Conveyor Belt&#xa; Crane&#xa; Stamp&#xa; xPPU&#xa;States&#xa; Stand By State&#xa; Initial State&#xa; State 1&#xa; State 2&#xa; State 3&#xa; State 4&#xa; State 4.1&#xa; State 5&#xa; State 6&#xa; State 6.1&#xa; State 7&#xa; State 8&#xa; State 9&#xa; State 9.1&#xa; Stop State&#xa;Assets&#xa; Work Piece Storage Asset&#xa;Processes&#xa; xPPU Work Piece Separation Process - Scenario 11&#xa;Services&#xa; Storaging Service&#xa; Stamping Service&#xa; Moving Service&#xa; Buffering Service&#xa;Dynamics Models&#xa; xPPU Conveyor Belt Dynamics Model&#xa;Variables&#xa; Outputs&#xa;  Conveyor Belt Forward&#xa;  Ramp 1 Valve Extension&#xa;  Ramp 2 Valve Extension&#xa; Inputs&#xa;  Presence Sensor Start&#xa;  Presence Sensor End&#xa;  Light Sensor Ramp1&#xa;  Light Sensor Ramp2&#xa;  Inductive Sensor Ramp1&#xa;  Inductive Sensor Ramp2&#xa;  Ramp1 Filling&#xa;  Ramp2 Filling&#xa;  Ramp End Filling&#xa;  Start Button&#xa;  Stop Button&#xa;  Reed Switch Ramp1 Extended&#xa;  Reed Switch Ramp1 Retracted&#xa;  Reed Switch Ramp2 Extended&#xa;  Reed Switch Ramp2 Retracted&#xa;Administration Shells&#xa; Conveyor Belt Shell&#xa; Crane Shell&#xa; Stamp Shell&#xa;Execution Scopes&#xa; Execution Scope xPPU&#xa; Execution Scope Conveyor Belt&#xa; Execution Scope Crane&#xa; Execution Scope Stamp"/>
                 </Property>
               </Properties>
               <Events>
@@ -236,7 +236,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="400" y="130" width="320" height="200"/>
+              <AbsoluteConstraints x="400" y="130" width="440" height="200"/>
             </Constraint>
           </Constraints>
 
@@ -250,7 +250,7 @@
                   </Border>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Soft Elegance" size="14" style="0"/>
+                  <Font name="Century Gothic" size="14" style="0"/>
                 </Property>
               </Properties>
               <AuxValues>
