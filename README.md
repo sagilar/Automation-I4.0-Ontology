@@ -7,10 +7,10 @@
 ### Update 03/2021
 - Incorporation of the RAMI Ontology (https://github.com/i40-Tools/RAMIOntology).
 - Change of classes and relations. Extended concepts.
-- There are 2 case studies: A basic metal separation process and a scenario of the x-PPU of AIS TUM (please see https://github.com/x-PPU and https://mediatum.ub.tum.de/doc/1208973).
+- There are 2 case studies: A basic metal separation process (folder `Automation-I40-Ontology-CaseStudy`) and a scenario of the x-PPU of AIS TUM (folder `xPPU-AI40-CaseStudy` - please see https://github.com/x-PPU and https://mediatum.ub.tum.de/doc/1208973).
 - The Java applications for both case studies now use Maven for the management of dependencies.
 - All the owl files now use the RDF/XML serialization.
-- Json ontology files are now available in the folder `webvowl` to be visualized on a web browser.
+- Json ontology files are now available in the folder `webvowl` to be visualized on a web browser with the WebVOWL tool (http://vowl.visualdataweb.org/webvowl.html).
 - The folder `Generated Java Code` has the java generated code provided by Protégé of both the Automation I4.0 Ontologies, the full and short versions.
 
 ### Update 20/05/2019
