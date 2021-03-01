@@ -31,7 +31,9 @@ Both Python scripts have the feature to work with IO events to manage the variab
 - SWRLAPI v2.0.6
 - OWLAPI v4.2.8
 - Eclipse Milo Stack v0.2.5
-- python-opcua (for clients)
+- python-opcua (for clients)  
+
+
 Maven should supply the dependencies when needed.
 
 --------------------------------------------------------------------------------------------------------

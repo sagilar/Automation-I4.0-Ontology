@@ -15,7 +15,9 @@ The main application runs in Java. It contains the generated Java code from Prot
 
 ### Dependencies
 - SWRLAPI v2.0.6
-- OWLAPI v4.2.8
+- OWLAPI v4.2.8  
+
+
 Maven should supply the dependencies when needed.
 
 --------------------------------------------------------------------------------------------------------
