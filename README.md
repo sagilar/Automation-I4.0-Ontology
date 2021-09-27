@@ -67,14 +67,11 @@ This project was carried out currently under my master's thesis "A proposal of a
 I keep on doing enhancements and adding new features.  
 If you use any resources of this project for your research please cite:  
 - "Semantic Automation Systems, a Suitable Approach for Automation Networks in the Industry 4.0", https://ieeexplore.ieee.org/document/8921156.
+- "An Ontological Model to Integrate and Assist Virtualization of Automation Systems for Industry 4.0", https://doi.org/10.1520/SSMS20210010.
 
 
 ## Cases
 Check the folders `Automation-I40-Ontology-CaseStudy` and `xPPU-AI40-CaseStudy` to see 2 Java maven applications using the Automation I4.0 Ontology.  
-
-## Contribution and support
-If you are interested in contribute to this project, feel free to do it.  
-Regarding to the support, I am working on it continuously, so, if any problem appears, do not hesitate to create an issue.  
 
 ## License
 Automation-I4.0-Ontology is licensed by an Apache License 2.0 (see http://www.apache.org/licenses/LICENSE-2.0 for more details).  
