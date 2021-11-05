@@ -63,8 +63,7 @@ The Standards Ontology is a work done by Irlán Grangel, Steffen Lohman, and Pau
 The RAMI Ontology which bases on the RAMI Model and the Administration Shell concept. Please see https://github.com/i40-Tools/RAMIOntology, https://vocol.iais.fraunhofer.de/rami/ for more details.
 
 ## Research
-This project was carried out currently under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
-I keep on doing enhancements and adding new features.  
+This project was carried out under my master's thesis "A proposal of a formal model to integrate distributed service-based automation systems, semantic models, and automation standards." at the Universidad Nacional de Colombia, in Medellín, Colombia.  
 If you use any resources of this project for your research please cite:  
 - "Semantic Automation Systems, a Suitable Approach for Automation Networks in the Industry 4.0", https://ieeexplore.ieee.org/document/8921156.
 - "An Ontological Model to Integrate and Assist Virtualization of Automation Systems for Industry 4.0", https://doi.org/10.1520/SSMS20210010.
